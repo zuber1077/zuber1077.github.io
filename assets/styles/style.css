@@ -138,7 +138,6 @@
         *,
         *:before,
         *:after {
-            -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
         }
@@ -161,13 +160,9 @@
         body.is-loading *,
         body.is-loading *:before,
         body.is-loading *:after {
-            -moz-animation: none !important;
             -webkit-animation: none !important;
-            -ms-animation: none !important;
             animation: none !important;
-            -moz-transition: none !important;
             -webkit-transition: none !important;
-            -ms-transition: none !important;
             transition: none !important;
         }
 
@@ -202,9 +197,7 @@
         }
 
         a {
-            -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
             -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-            -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
             transition: color 0.2s ease, border-bottom-color 0.2s ease;
             text-decoration: none;
             border-bottom: dotted 1px;
@@ -481,7 +474,8 @@
         input[type="url"]:invalid,
         select:invalid,
         textarea:invalid {
-            box-shadow: none;
+            -webkit-box-shadow: none;
+                    box-shadow: none;
         }
 
         input[type="text"]:focus,
@@ -493,7 +487,8 @@
         select:focus,
         textarea:focus {
             border-color: #49c8ff;
-            box-shadow: 0 0 0 1px #49c8ff;
+            -webkit-box-shadow: 0 0 0 1px #49c8ff;
+                    box-shadow: 0 0 0 1px #49c8ff;
         }
 
         .select-wrapper {
@@ -610,7 +605,8 @@
         input[type="checkbox"]:focus+label:before,
         input[type="radio"]:focus+label:before {
             border-color: #49c8ff;
-            box-shadow: 0 0 0 1px #49c8ff;
+            -webkit-box-shadow: 0 0 0 1px #49c8ff;
+                    box-shadow: 0 0 0 1px #49c8ff;
         }
 
         input[type="checkbox"]+label:before {
@@ -864,44 +860,40 @@
         }
 
         ul.actions.spinY li {
-            -moz-perspective: 1000px;
             -webkit-perspective: 1000px;
             -ms-perspective: 1000px;
             perspective: 1000px;
         }
 
         ul.actions.spinY li a {
-            -moz-transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, -moz-transform 0.5s ease-in;
             -webkit-transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, -webkit-transform 0.5s ease-in;
-            -ms-transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, -ms-transform 0.5s ease-in;
+            -webkit-transition: background-color 0.2s ease, color 0.2s ease, -webkit-box-shadow 0.2s ease, -webkit-transform 0.5s ease-in;
+            transition: background-color 0.2s ease, color 0.2s ease, -webkit-box-shadow 0.2s ease, -webkit-transform 0.5s ease-in;
             transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, transform 0.5s ease-in;
+            transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, transform 0.5s ease-in, -webkit-box-shadow 0.2s ease, -webkit-transform 0.5s ease-in;
         }
 
         ul.actions.spinY li a.active {
-            -moz-transform: rotateY(480deg);
             -webkit-transform: rotateY(480deg);
-            -ms-transform: rotateY(480deg);
             transform: rotateY(480deg);
         }
 
         ul.actions.spinX li {
-            -moz-perspective: 1000px;
             -webkit-perspective: 1000px;
             -ms-perspective: 1000px;
             perspective: 1000px;
         }
 
         ul.actions.spinX li a {
-            -moz-transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, -moz-transform 0.5s ease-in;
             -webkit-transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, -webkit-transform 0.5s ease-in;
-            -ms-transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, -ms-transform 0.5s ease-in;
+            -webkit-transition: background-color 0.2s ease, color 0.2s ease, -webkit-box-shadow 0.2s ease, -webkit-transform 0.5s ease-in;
+            transition: background-color 0.2s ease, color 0.2s ease, -webkit-box-shadow 0.2s ease, -webkit-transform 0.5s ease-in;
             transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, transform 0.5s ease-in;
+            transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, transform 0.5s ease-in, -webkit-box-shadow 0.2s ease, -webkit-transform 0.5s ease-in;
         }
 
         ul.actions.spinX li a.active {
-            -moz-transform: rotateX(480deg);
             -webkit-transform: rotateX(480deg);
-            -ms-transform: rotateX(480deg);
             transform: rotateX(480deg);
         }
 
@@ -994,15 +986,17 @@
             -webkit-appearance: none;
             -ms-appearance: none;
             appearance: none;
-            -moz-transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
             -webkit-transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
-            -ms-transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+            -webkit-transition: background-color 0.2s ease, color 0.2s ease, -webkit-box-shadow 0.2s ease;
+            transition: background-color 0.2s ease, color 0.2s ease, -webkit-box-shadow 0.2s ease;
             transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+            transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, -webkit-box-shadow 0.2s ease;
             -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
             background-color: transparent;
             border-radius: 8px;
             border: 0;
-            box-shadow: inset 0 0 0 1px #cccccc;
+            -webkit-box-shadow: inset 0 0 0 1px #cccccc;
+                    box-shadow: inset 0 0 0 1px #cccccc;
             color: #555 !important;
             cursor: pointer;
             display: inline-block;
@@ -1040,9 +1034,7 @@
         input[type="button"].back:before,
         button.back:before,
         .button.back:before {
-            -moz-transition: opacity 0.2s ease;
             -webkit-transition: opacity 0.2s ease;
-            -ms-transition: opacity 0.2s ease;
             transition: opacity 0.2s ease;
             background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwczovL3d3dy53My5vcmcvMTk5OS94bGluaycgd2lkdGg9JzExMnB4JyBoZWlnaHQ9Jzk2cHgnIHZpZXdCb3g9JzAgMCAxMTIgOTYnIHpvb21BbmRQYW49J2Rpc2FibGUnPjxzdHlsZT5saW5lIHsgc3Ryb2tlOiAjY2NjY2NjOyBzdHJva2Utd2lkdGg6IDRweCB9PC9zdHlsZT48bGluZSB4MT0nMCcgeTE9JzQ2JyB4Mj0nMTEyJyB5Mj0nNDYnIC8+PGxpbmUgeDE9JzI0JyB5MT0nMjInIHgyPScwJyB5Mj0nNDYnIC8+PGxpbmUgeDE9JzI0JyB5MT0nNzAnIHgyPScwJyB5Mj0nNDYnIC8+PC9zdmc+");
             background-position: center;
@@ -1064,9 +1056,7 @@
         input[type="button"].back:after,
         button.back:after,
         .button.back:after {
-            -moz-transition: opacity 0.2s ease;
             -webkit-transition: opacity 0.2s ease;
-            -ms-transition: opacity 0.2s ease;
             transition: opacity 0.2s ease;
             background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwczovL3d3dy53My5vcmcvMTk5OS94bGluaycgd2lkdGg9JzExMnB4JyBoZWlnaHQ9Jzk2cHgnIHZpZXdCb3g9JzAgMCAxMTIgOTYnIHpvb21BbmRQYW49J2Rpc2FibGUnPjxzdHlsZT5saW5lIHsgc3Ryb2tlOiAjNDljOGZmOyBzdHJva2Utd2lkdGg6IDRweCB9PC9zdHlsZT48bGluZSB4MT0nMCcgeTE9JzQ2JyB4Mj0nMTEyJyB5Mj0nNDYnIC8+PGxpbmUgeDE9JzI0JyB5MT0nMjInIHgyPScwJyB5Mj0nNDYnIC8+PGxpbmUgeDE9JzI0JyB5MT0nNzAnIHgyPScwJyB5Mj0nNDYnIC8+PC9zdmc+");
             background-position: center;
@@ -1145,7 +1135,8 @@
         button.active,
         .button:hover,
         .button.active {
-            box-shadow: inset 0 0 0 1px #49c8ff;
+            -webkit-box-shadow: inset 0 0 0 1px #49c8ff;
+                    box-shadow: inset 0 0 0 1px #49c8ff;
             color: #49c8ff !important;
         }
 
@@ -1167,7 +1158,8 @@
         input[type="button"].special,
         button.special,
         .button.special {
-            box-shadow: none;
+            -webkit-box-shadow: none;
+                    box-shadow: none;
             background-color: #555;
             color: #f4f4f4 !important;
         }
@@ -1208,22 +1200,25 @@
 
         #wrapper {
             display: -moz-flex;
-            display: -webkit-flex;
             display: -ms-flex;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             -moz-align-items: center;
-            -webkit-align-items: center;
             -ms-align-items: center;
-            align-items: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             -moz-flex-direction: column;
-            -webkit-flex-direction: column;
             -ms-flex-direction: column;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                    flex-direction: column;
             -moz-justify-content: center;
-            -webkit-justify-content: center;
             -ms-justify-content: center;
-            justify-content: center;
-            -moz-perspective: 1000px;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
             -webkit-perspective: 1000px;
             -ms-perspective: 1000px;
             perspective: 1000px;
@@ -1252,30 +1247,33 @@
 
         .panel {
             display: -moz-flex;
-            display: -webkit-flex;
             display: -ms-flex;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             -moz-align-items: stretch;
-            -webkit-align-items: stretch;
             -ms-align-items: stretch;
-            align-items: stretch;
+            -webkit-box-align: stretch;
+                -ms-flex-align: stretch;
+                    align-items: stretch;
             -moz-justify-content: center;
-            -webkit-justify-content: center;
             -ms-justify-content: center;
-            justify-content: center;
-            -moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
             -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
-            -ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease;
+            transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
             transition: opacity 0.5s ease, transform 0.5s ease;
+            transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
             max-width: calc(100vw - 6em);
             width: 86em;
         }
 
         .panel>.image {
-            -moz-transition: -moz-transform 0.5s ease;
             -webkit-transition: -webkit-transform 0.5s ease;
-            -ms-transition: -ms-transform 0.5s ease;
+            transition: -webkit-transform 0.5s ease;
             transition: transform 0.5s ease;
+            transition: transform 0.5s ease, -webkit-transform 0.5s ease;
             background-color: #777;
             background-position: center;
             background-repeat: no-repeat;
@@ -1290,28 +1288,33 @@
             border-radius: 0;
             display: block;
             height: 100%;
-            object-fit: cover;
-            object-position: center;
+            -o-object-fit: cover;
+               object-fit: cover;
+            -o-object-position: center;
+               object-position: center;
             width: 100%;
         }
 
         .panel>.content {
             display: -moz-flex;
-            display: -webkit-flex;
             display: -ms-flex;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             -moz-flex-direction: column;
-            -webkit-flex-direction: column;
             -ms-flex-direction: column;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                    flex-direction: column;
             -moz-justify-content: center;
-            -webkit-justify-content: center;
             -ms-justify-content: center;
-            justify-content: center;
-            -moz-transition: -moz-transform 0.5s ease;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
             -webkit-transition: -webkit-transform 0.5s ease;
-            -ms-transition: -ms-transform 0.5s ease;
+            transition: -webkit-transform 0.5s ease;
             transition: transform 0.5s ease;
+            transition: transform 0.5s ease, -webkit-transform 0.5s ease;
             background-color: #ffffff;
             padding: 3em;
             width: 50%;
@@ -1322,16 +1325,12 @@
         }
 
         .panel.inactive>.image {
-            -moz-transform: translateY(1em);
             -webkit-transform: translateY(1em);
-            -ms-transform: translateY(1em);
             transform: translateY(1em);
         }
 
         .panel.inactive>.content {
-            -moz-transform: translateY(-1em);
             -webkit-transform: translateY(-1em);
-            -ms-transform: translateY(-1em);
             transform: translateY(-1em);
         }
 
@@ -1344,31 +1343,26 @@
         }
 
         .panel.special.inactive {
-            -moz-transform: translateZ(-2em);
             -webkit-transform: translateZ(-2em);
-            -ms-transform: translateZ(-2em);
             transform: translateZ(-2em);
         }
 
         .panel.special.inactive>.image {
-            -moz-transform: none;
             -webkit-transform: none;
-            -ms-transform: none;
             transform: none;
         }
 
         .panel.special.inactive>.content {
-            -moz-transform: none;
             -webkit-transform: none;
-            -ms-transform: none;
             transform: none;
         }
 
         .panel.secondary>.content {
             -moz-justify-content: space-between;
-            -webkit-justify-content: space-between;
             -ms-justify-content: space-between;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
         }
 
         .panel.secondary>.content>.actions {
@@ -1405,9 +1399,10 @@
         @media screen and (max-width: 980px) {
             .panel {
                 -moz-flex-direction: column;
-                -webkit-flex-direction: column;
                 -ms-flex-direction: column;
-                flex-direction: column;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                        flex-direction: column;
             }
             .panel>.image {
                 min-height: 60vh;
@@ -1422,15 +1417,11 @@
                 display: none;
             }
             .panel.inactive>.image {
-                -moz-transform: translateX(1em);
                 -webkit-transform: translateX(1em);
-                -ms-transform: translateX(1em);
                 transform: translateX(1em);
             }
             .panel.inactive>.content {
-                -moz-transform: translateX(-1em);
                 -webkit-transform: translateX(-1em);
-                -ms-transform: translateX(-1em);
                 transform: translateX(-1em);
             }
         }
@@ -1469,65 +1460,53 @@
         }
 
         body.is-loading-0 .panel>.image {
-            -moz-transform: translateX(4em);
             -webkit-transform: translateX(4em);
-            -ms-transform: translateX(4em);
             transform: translateX(4em);
         }
 
         body.is-loading-0 .panel>.content {
-            -moz-transform: translateX(-4em);
             -webkit-transform: translateX(-4em);
-            -ms-transform: translateX(-4em);
             transform: translateX(-4em);
         }
 
         @media screen and (max-width: 980px) {
             body.is-loading-0 .panel {
-                -moz-transform: translateZ(-2em);
                 -webkit-transform: translateZ(-2em);
-                -ms-transform: translateZ(-2em);
                 transform: translateZ(-2em);
             }
             body.is-loading-0 .panel>.image {
-                -moz-transform: none;
                 -webkit-transform: none;
-                -ms-transform: none;
                 transform: none;
             }
             body.is-loading-0 .panel>.content {
-                -moz-transform: none;
                 -webkit-transform: none;
-                -ms-transform: none;
                 transform: none;
             }
         }
 
         body.is-loading-1 .panel {
-            -moz-transition: opacity 2s ease, -moz-transform 0.5s ease;
             -webkit-transition: opacity 2s ease, -webkit-transform 0.5s ease;
-            -ms-transition: opacity 2s ease, -ms-transform 0.5s ease;
+            transition: opacity 2s ease, -webkit-transform 0.5s ease;
             transition: opacity 2s ease, transform 0.5s ease;
+            transition: opacity 2s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
         }
 
         body.is-loading-1 .panel>.image {
-            -moz-transition: -moz-transform 1s ease;
             -webkit-transition: -webkit-transform 1s ease;
-            -ms-transition: -ms-transform 1s ease;
+            transition: -webkit-transform 1s ease;
             transition: transform 1s ease;
+            transition: transform 1s ease, -webkit-transform 1s ease;
         }
 
         body.is-loading-1 .panel>.content {
-            -moz-transition: -moz-transform 1s ease;
             -webkit-transition: -webkit-transform 1s ease;
-            -ms-transition: -ms-transform 1s ease;
+            transition: -webkit-transform 1s ease;
             transition: transform 1s ease;
+            transition: transform 1s ease, -webkit-transform 1s ease;
         }
 
         #footer {
-            -moz-transition: opacity 0.5s ease;
             -webkit-transition: opacity 0.5s ease;
-            -ms-transition: opacity 0.5s ease;
             transition: opacity 0.5s ease;
             margin: 3em 0 0 0;
             opacity: 1.0;
@@ -1561,3 +1540,140 @@
         body.is-loading-0 #footer {
             opacity: 0;
         }
+/* this is for the boooble */
+@import url("//fonts.googleapis.com/css?family=Inconsolata:700");
+
+/* svg */
+
+svg{
+  display: block;
+  width: 50%;  
+}
+#coder{
+  -webkit-animation: dash 10s linear forwards;
+          animation: dash 10s linear forwards;
+  stroke-dasharray: 5000;
+  stroke-dashoffset: 5000;
+}
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 10;
+  }
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 10;
+  }
+}
+#colors{
+  opacity: 0;
+  -webkit-animation: colorIn 5s 8s ease-out forwards;
+          animation: colorIn 5s 8s ease-out forwards;
+}
+@-webkit-keyframes colorIn {
+  from {opacity:0;}
+  to {opacity: 1;}
+}
+@keyframes colorIn {
+  from {opacity:0;}
+  to {opacity: 1;}
+}
+@media only screen and (max-width: 600px) {
+    svg {
+        width: 100%;
+    }
+}
+
+
+/* skillls */
+
+
+.skillss {
+  font-family: 'Raleway', sans-serif !important;
+  width:600px;
+}
+
+/* p{
+  color:#525252;
+  font-size:12px;
+} */
+
+
+.container-skillbar {
+    width:100%;
+    /* padding-top:30px;
+    padding-right: 2%;
+    padding-left: 2%; */
+    height:auto;
+    overflow:none;
+  }
+  .skillbar {
+    position:relative;
+    display:block;
+    margin-bottom:15px;
+    width:80%;
+    background:#efefef;
+    height:30px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    -webkit-transition:0.4s linear;
+    transition:0.4s linear;
+    -webkit-transition-property:width, background-color;
+    transition-property:width, background-color;
+  }
+
+  .skillbar-title {
+    position:absolute;
+    top:0;
+    left:0;
+    width:110px;
+    font-weight:bold;
+    font-size:13px;
+    color:#fff;
+    background:#6adcfa;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:4px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+  }
+
+  .skillbar-title span {
+    display:block;
+    background:rgba(0, 0, 0, 0.15);
+    padding:0 20px;
+    height:30px;
+    line-height:30px;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:3px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+  }
+
+  .skillbar-bar {
+    height:30px;
+    width:0px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+  }
+
+  .skill-bar-percent {
+    position:absolute;
+    right:10px;
+    top:0;
+    font-size:11px;
+    height:30px;
+    line-height:30px;
+    color:#ffffff;
+    color:rgba(0, 0, 0, 0.5);
+  }
+
+
+
+  /* hoverrr */
+
