@@ -147,6 +147,10 @@
         }
 
         @media screen and (max-width: 480px) {
+             .skillss {
+                 width:420px !important;}
+                 .container-skillbar {
+    width:80%;}
             html,
             body {
                 min-width: 320px;
@@ -272,6 +276,8 @@
         h6 {
             font-size: 0.7em;
         }
+        .skillss  {
+                width:400px;}
 
         @media screen and (max-width: 736px) {
             h1 {
@@ -851,6 +857,8 @@
         }
 
         @media screen and (max-width: 736px) {
+             .skillss  {
+               width:400px;}
             ul.actions.vertical.special li {
                 padding: 1em 0 0 0;
             }
@@ -1579,6 +1587,9 @@ svg{
   to {opacity: 1;}
 }
 @media only screen and (max-width: 600px) {
+    
+    .container-skillbar {
+    width:50%;}
     svg {
         width: 100%;
     }
@@ -1606,6 +1617,7 @@ svg{
     padding-left: 2%; */
     height:auto;
     overflow:none;
+    
   }
   .skillbar {
     position:relative;
