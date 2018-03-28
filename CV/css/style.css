@@ -195,6 +195,10 @@ body{
 	font-family: "Consolas";
 	font-size: 16px;
 }
+@font-face {
+    font-family: Consolas;
+    src: url("css/fonts/Consolas.ttf") format("ttf");
+}
 
 ::-moz-selection {
     background: rgba(255,255,255,.15);
