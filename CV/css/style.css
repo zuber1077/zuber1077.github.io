@@ -196,8 +196,8 @@ body{
 	font-size: 16px;
 }
 @font-face {
-    font-family: Consolas;
-    src: url("css/fonts/Consolas.ttf") format("ttf");
+    font-family: 'Consolas';
+    src: url("Consolas.ttf") format("ttf");
 }
 
 ::-moz-selection {
