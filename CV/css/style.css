@@ -1,7 +1,5 @@
-/* Author : zuber Ab 
-   Description : My CV
-   Date : 27.03.2018
-*/
+/* cv Css */
+
 .code,
 .code .line-count,
 .code .line-count span,
@@ -219,4 +217,5 @@ body{
     text-decoration: none;
     list-style-type: none;
     outline: none;
-}
+} 
+		
