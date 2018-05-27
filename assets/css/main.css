@@ -1568,7 +1568,10 @@ svg{
     width:50%;}
     svg {
         width: 100%;
-    }
+	}
+	.skillss{
+		 width: 400px;
+	}
 }
 
 
@@ -1661,6 +1664,11 @@ svg{
     color:rgba(0, 0, 0, 0.5);
   }
 
+  @media only screen and (max-width: 736px) {
+	.skillss{
+		 width: 400px;
+	}
+}
 
 
   /* hoverrr */
