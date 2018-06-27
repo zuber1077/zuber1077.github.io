@@ -298,14 +298,14 @@
     }
 
     .inverse {
-      background: #0e1e25;
-      color: rgba(255, 255, 255, .8);
+      background: #F3F7F8;
+      color: #000D0F;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale
     }
 
     svg {
-      fill: currentColor
+      fill: currentColor;    
     }
 
     .h1,
@@ -319,7 +319,7 @@
     h5,
     h6 {
       font-weight: 500;
-      color: #0e1e25;
+      color: #152125;
       margin: 1.618em auto 0
     }
 
@@ -333,7 +333,7 @@
     .inverse h4,
     .inverse h5,
     .inverse h6 {
-      color: #fff
+      color: #000;
     }
 
     .h1+p,
@@ -389,7 +389,7 @@
 
     .h3,
     h3 {
-      font-size: 1.3em;
+      font-size: 18px;
       line-height: 1.333
     }
 
@@ -449,12 +449,13 @@
     body {
       padding: 0;
       margin: 0;
-      position: relative
+      position: relative;
+      background: #F3F7F8;
     }
 
-    img {
+    /* img {
       max-width: 100%
-    }
+    } */
 
     .container {
       box-sizing: border-box;
@@ -524,7 +525,7 @@
     @media (min-width:60em) {
       .media-body,
       .media-img {
-        margin-top: 2.618em
+        margin-top: 0.218em
       }
     }
 
@@ -560,7 +561,7 @@
       margin: 0 auto;
       display: flex;
       flex-direction: column;
-      font-size: .85rem
+      font-size: 14px;
     }
 
     .grid>* {
@@ -679,6 +680,11 @@
       }
     }
 
+    .button{
+      margin:20px 20px 20px 0;
+      margin-left: 30%;
+      margin-right: 30%
+    }
     .button {
       box-sizing: border-box;
       position: relative;
@@ -1010,28 +1016,40 @@
 
     .svg{
       margin: 0 0 0 0;
-      padding-top: 0px;
+      margin-top: -6px;
       overflow: hidden;
       clear: both;
-      display: block'
+      display: block;
+      width: 100%;
       
+    }
+    .footer-text{
+      color: #000 !important;
     }
 
     .nav a:not(.button) {
       display: block;
-      font-weight: 200;
+      font-weight:100 !important;
       font-size: 18px;
-      color: #414356;
-      opacity: .100;
+      color: #0b0b0c;
       white-space: nowrap
     }
     .active{
       color: #239ba5;
     }
+    .quote{
+   margin-left:5px 5px 20px 5px;
+      /*padding: 40px; */
+    border-left: 5px solid #bdc3c7;
+    padding-left: 5px;
+    }
+    .quote-qr{
+      margin-left: 20px;
+    }
 
     .inverse .nav a:not(.button) {
       opacity: .8;
-      color: #fff
+      color: #000;
     }
 
     .nav a:not(.button):focus,
@@ -1176,7 +1194,7 @@
     }
 
     .site-header {
-      padding-top: .618em
+      padding-top: .618em;
     }
 
     .site-header ul {
@@ -1218,7 +1236,8 @@
       font-size: .85rem;
       text-align: center;
       padding-bottom: 2.618em;
-      color: rgba(14, 30, 37, .38)
+      color: rgba(14, 30, 37, .38);
+      background-color: #fff;
     }
 
     .site-footer p {
@@ -1232,7 +1251,7 @@
 
     .site-footer ul a {
       color: #0e1e25;
-      opacity: .54
+     
     }
 
     .site-footer .hr--top {
@@ -1302,7 +1321,7 @@
     }
 
     .site-header {
-      background: 0 0;
+      background: #fff;
       z-index: 9
     }
 
@@ -1773,6 +1792,9 @@
       height: 36em;
       width: auto
     }
+.media:hover{
+  background-color: #fff;
+}
 
     @media (max-width:33em) {
       .hero--home .illo svg {
