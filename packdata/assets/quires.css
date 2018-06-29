@@ -1,0 +1,47 @@
+
+/* big tablets to 1200px:widths smaller than 1140px row */
+
+@media only screen and (max-width: 1200px){
+
+}
+
+
+
+
+/* SMALL tablets to big tablets:from 767px TO 1023px */
+@media only screen and (max-width: 1023px){
+
+}
+
+
+
+/* SMALL PHONES to small tablets:from 481px TO 767px */
+@media only screen and (max-width: 767px){
+    .ht--top.nav{
+         width: 33.33333%;
+        position: relative;
+        float: left;
+        margin: 0;
+        
+    }
+    .ui-margin{
+       padding:0 20px;
+        color: red;
+    }
+    .footer-text{
+    padding:0 20px;
+    background-color: red;
+    }
+    .footer-links {
+          padding:0 20px;
+        }
+}
+
+/* SMALL PHONES FROM 0 TO 480 */
+
+@media only screen and (max-width: 480px){
+ .ui-margin>a{
+       padding:0 20px;
+        background-color: red;
+    }
+}
