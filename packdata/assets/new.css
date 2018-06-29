@@ -663,6 +663,8 @@ section {
       }
     }
 
+
+
     .grid {
       list-style: none;
       padding: 0;
@@ -1460,7 +1462,7 @@ span{
     }
 
     .ui.centered.grid > .row > .column:not(.aligned):not(.justified){
-      padding: 20px;
+      padding: 15px;
       transform: inherit;
     }
 
@@ -2120,7 +2122,7 @@ span{
 
     @media (min-width:60em) {
       .section--home-benefits {
-        padding-bottom: 6.854em
+        padding-bottom: 2.854em
       }
     }
 
