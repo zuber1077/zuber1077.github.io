@@ -1573,8 +1573,6 @@
         videoPopup();
         accordionToggle();
         portfolioIsotope();
-        googleMap();
-        googleMap_S2();
         parallax();
         heights();
         flexProduct();
