@@ -99,6 +99,8 @@
                         $('.btn-menu').removeClass('active');
                         $('.submenu-child').hide();
                         hasSubmenuChild.children('a').after('<span class="btn-submenu-child"></span>');
+                        $('.nohas').removeClass('btn-submenu','active');
+
 
                     } else {
                         var $desktopMenu = $('#mainnav-mobi').attr('id', 'mainnav').removeAttr('style');
@@ -1586,7 +1588,7 @@
         swClick();
         goTop();
         scroll();
-        removePreloader();
+        
     });
 
 })(jQuery);
