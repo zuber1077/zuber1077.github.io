@@ -1138,10 +1138,16 @@
 @media (max-width: 767px) {
 	#logo {
 		width: 55%;
+		font-size: 25px;
 	}
+	#header.style1 #logo a,
+   #header.style2 #logo a {
+	font-size: 25px;
+}
 
 	#header.style1.v1 #logo {
 		width: 55%;
+		font-size: 25px;
 	}
 
 	.boxed.style2 .header-top.style1 ul.flat-social {
