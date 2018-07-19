@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Pack Data | Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- C3 charts css -->
+    <link href="assets/plugins/c3/c3.min.css" rel="stylesheet" type="text/css" />
+
+    <!--Chartist Chart CSS -->
+    <link rel="stylesheet" href="assets/plugins/chartist/css/chartist.min.css">
+            
+    <link href="assets/plugins/morris/morris.css" rel="stylesheet">
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <!-- Navigation Bar-->
+    <header id="topnav">
+        <div class="topbar-main">
+            <div class="container-fluid">
+    
+                <!-- Logo container-->
+                <div class="logo">
+                    <!-- Text Logo -->
+                    <!--<a href="index.html" class="logo">-->
+                    <!--Annex-->
+                    <!--</a>-->
+                    <!-- Image Logo -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo-sm.png" alt="" height="22" class="logo-small">
+                        <img src="assets/images/logo.png" alt="" width="80"  class="logo-large">
+                    </a>
+    
+                </div>
+                
+                <!-- End Logo container-->
+    
+                <div class="menu-extras topbar-custom">
+    
+                    <ul class="list-inline float-right mb-0">
+                        <li class="list-inline-item dropdown notification-list hide-phone">
+                            <a class="nowss nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                aria-expanded="false">
+                                项目
+                            </a>
+                        </li>
+                        <!-- search -->
+
+                        <li class="hide-phone app-search">
+                            <form role="search" class="">
+                                <input type="text" placeholder="搜索所有项目" class="form-control">
+                                <a href="">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </form>
+                        </li>
+
+                        <!-- search -->
+                        <!-- logout-->
+                        <li class="list-inline-item dropdown notification-list hide-phone">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                aria-expanded="false">
+                                姜毅
+                            </a>
+                        </li>
+                        <!-- User-->
+                        <li class="list-inline-item dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                aria-expanded="false">
+                                <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle">
+                            </a>
+                        </li>
+                        
+                        <li class="list-inline-item dropdown notification-list hide-phone">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                aria-expanded="false">
+                                退出
+                            </a>
+                        </li>
+                        <li class="list-inline-item dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                aria-expanded="false">
+                                <img src="assets/images/users/avatar-q.png" alt="user" class="rounded-circle"style="height: 23px; width: 23px;">
+                            </a>
+                        </li>
+                        <!--  -->
+                        
+                        
+                        <li class="menu-item list-inline-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle nav-link">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </li>
+    
+                    </ul>
+                </div>
+                <!-- end menu-extras -->
+    
+                <div class="clearfix"></div>
+    
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end topbar-main -->
+    
+        <!-- MENU Start -->
+        <div class="navbar-custom">
+            <div class="container-fluid">
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+    
+                        <li class="has-submenu">
+                            <a href="index.html">
+                                首页</a>
+                        </li>
+    
+                        <li class="has-submenu">
+                            <a href="#">
+                                敏感数据发现</a>
+                        </li>
+    
+                        <li class="has-submenu">
+                            <a href="#">
+                                敏感脱敏</a>
+                        </li>
+                        
+    
+                        <li class="has-submenu">
+                            <a href="#">
+                                调度管理</a>
+                        </li>
+    
+                        <li class="has-submenu">
+                            <a href="#">
+                                监控与审计</a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#">
+                                设置</a>
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="pages-login.html">Login</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-register.html">Register</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-recoverpw.html">Recover Password</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-lock-screen.html">Lock Screen</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                    </ul>
+                    <!-- End navigation menu -->
+                </div>
+                <!-- end #navigation -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end navbar-custom -->
+    </header>
+    <!-- End Navigation Bar-->
+
+
+    <div class="wrapper">
+            <div class="container-fluid">
+
+                <!-- Page-Title -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-title-box">
+                            <div class="btn-group pull-right">
+                                
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title end breadcrumb -->
+                <div class="row">
+                    <div class="col-md-12 col-xl-8">
+                        <div class="card m-b-30">
+                            <div class="card-body">
+                                <h4 class="mt-0 header-title">脱敏规则</h4>
+                            <div id="stacked-bar-chart" class="ct-chart ct-golden-section" style="height: 460px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <style>.bg-info{background-color: #fff !important;}</style>
+                        <div class="col-md-12 col-lg-6 col-xl-4">
+                            <div class="card bg-info m-b-30">
+                                <div class="card-body">
+                                    <p class="mt-0 header-title">敏感数据统计</p>
+                                    <div id="donut-chart" style="height: 190px;">
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="card bg-white">
+                            <div class="">
+                                <div class="card-body">
+                                    <p class="mt-0 header-title">敏感系统占比</p>
+                                    <div id="pie-chart" style="height: 190px;"></div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div> <!-- end Wraper  -->
+                <style>
+                .card-body{
+                    padding: 0;
+                }
+                .ct-horizontal {
+                     writing-mode: vertical-rl;
+                    text-orientation: upright;
+                    margin-top: 5px;
+                    margin-left: -12px;
+                }
+                .header-title{
+                    background-color: #eaeef1 !important;
+                }
+                .table thead th{
+                    text-align: center;
+                }
+                .table-secondary, .table-secondary>td, .table-secondary>th{
+                    background-color: #ebeff2 !important;
+                }
+                /* // 28 31 */
+                </style>
+                <!-- end row -->
+                <div class="">
+                    <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                    
+                                    <h4 class="mt-0 header-title">任务执行统计</h4>
+                                    <table class="table">
+                                        <thead class="thead-default">
+                                            <tr>
+                                                <th>源名称</th>
+                                                <th>执行时间</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Oracle库到文件脱敏无脱敏规则测试</td>
+                                                <td>2018-05-16 14:56:02</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Oracle库到文件脱敏无脱敏规则测试</td>
+                                                <td>2018-05-16 14:56:02</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Oracle库到文件脱敏无脱敏规则测试</td>
+                                                <td>2018-05-16 14:56:02</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Oracle库到文件脱敏无脱敏规则测试</td>
+                                                <td>2018-05-16 14:56:02</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Oracle库到文件脱敏无脱敏规则测试</td>
+                                                <td>2018-05-16 14:56:02</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Oracle库到文件脱敏无脱敏规则测试</td>
+                                                <td>2018-05-16 14:56:02</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oracle库到文件脱敏无脱敏规则测试</td>
+                                                <td>2018-05-16 14:56:02</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                    
+                                    <h4 class="mt-0 header-title">任务执行统计</h4>
+                                    <table class="table">
+                                        <thead class="thead-default">
+                                            <tr>
+                                                <th>源名称</th>
+                                                <th>目标名称</th>
+                                                <th>任务类别</th>
+                                                <th>执行时间</th>
+                                                <th>状态</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Oracle库到文件脱敏无脱敏规则测试</td>
+                                                <td>OPB_MMD_CATTR2EX</td>
+                                                <td>数据库>数据库</td>
+                                                <td>2018-05-16 14:56:02</td>
+                                                <td>加载中70%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oracle库到文件脱敏无脱敏规则测试</td>
+                                                <td>OPB_MMD_CATTR2EX</td>
+                                                <td>数据库>数据库</td>
+                                                <td>2018-05-16 14:56:02</td>
+                                                <td class="red">出错</td>
+                                            </tr>
+                                            <tr class="table-secondary">
+                                                <td>Oracle库到文件脱敏无脱敏规则测试</td>
+                                                <td>OPB_MMD_CATTR2EX</td>
+                                                <td>数据库>数据库</td>
+                                                <td>2018-05-16 14:56:02</td>
+                                                <td>无</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oracle库到文件脱敏无脱敏规则测试</td>
+                                                <td>OPB_MMD_CATTR2EX</td>
+                                                <td>数据库>数据库</td>
+                                                <td>2018-05-16 14:56:02</td>
+                                                <td class="green">完成</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oracle库到文件脱敏无脱敏规则测试</td>
+                                                <td>OPB_MMD_CATTR2EX</td>
+                                                <td>数据库>数据库</td>
+                                                <td>2018-05-16 14:56:02</td>
+                                                <td class="red">出错</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oracle库到文件脱敏无脱敏规则测试</td>
+                                                <td>OPB_MMD_CATTR2EX</td>
+                                                <td>数据库>数据库</td>
+                                                <td>2018-05-16 14:56:02</td>
+                                                <td>无</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oracle库到文件脱敏无脱敏规则测试</td>
+                                                <td>OPB_MMD_CATTR2EX</td>
+                                                <td>数据库>数据库</td>
+                                                <td>2018-05-16 14:56:02</td>
+                                                <td class="green">完成</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                        <!-- end col -->
+                    </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                
+
+<!-- jQuery  -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/modernizr.min.js"></script>
+<script src="assets/js/waves.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/jquery.nicescroll.js"></script>
+<script src="assets/js/jquery.scrollTo.min.js"></script>
+
+<script src="assets/plugins/skycons/skycons.min.js"></script>
+<script src="assets/plugins/raphael/raphael-min.js"></script>
+<script src="assets/plugins/morris/morris.min.js"></script>
+
+<!-- Chart JS -->
+<!-- <script src="assets/plugins/chart.js/chart.min.js"></script>
+<script src="assets/pages/chartjs.init.js"></script> -->
+
+<!--Morris Chart-->
+<script src="assets/plugins/morris/morris.min.js"></script>
+<script src="assets/plugins/raphael/raphael-min.js"></script>
+<script src="assets/pages/morris.init.js"></script>
+<!--Morris Chart-->
+<!-- <script src="assets/pages/crypto-exchange.init.js"></script> -->
+
+<!--C3 Chart-->
+<script type="text/javascript" src="assets/plugins/d3/d3.min.js"></script>
+<script type="text/javascript" src="assets/plugins/c3/c3.min.js"></script>
+<script src="assets/pages/c3-chart-init.js"></script>
+
+<!--Chartist Chart-->
+<script src="assets/plugins/chartist/js/chartist.min.js"></script>
+<script src="assets/plugins/chartist/js/chartist-plugin-tooltip.min.js"></script>
+<script src="assets/pages/chartist.init.js"></script>
+
+<!-- dashboard -->
+<!-- <script src="assets/pages/dashborad.js"></script> -->
+
+<!-- App js -->
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
