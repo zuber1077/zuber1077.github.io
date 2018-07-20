@@ -1,7 +1,4 @@
 /*
-Template Name: Annex - Bootstrap 4 Admin Dashboard
-Author: Mannatthemes
-Website: www.mannatthemes.com
 File: Main Css File
 */
 /*
@@ -1113,7 +1110,9 @@ code {
 ===================*/
 .card {
   border: none;
-  box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.05); }
+  box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.05); 
+  border: #ddd solid 2px;
+}
 
 .card-primary {
   background-color: #5b6be8;
@@ -2650,7 +2649,14 @@ body {
     margin-left: 0;
     margin-right: 10px; }
   #topnav .navigation-menu > li:hover a {
-    color: #283c55; }
+    color: #283c55; 
+  }
+  .has-submenu:hover{
+    background-color: #f5f5f5;
+    border-top: solid #000 2px;
+    border-left: solid #9199a4 1px;
+    border-right: solid #9199a4 1px;;
+  }
     #topnav .navigation-menu > li:hover a i {
       color: #283c55; }
   #topnav .navigation-menu > li .submenu {
@@ -2658,20 +2664,25 @@ body {
     top: 100%;
     left: 0;
     z-index: 1000;
-    padding: 15px 0;
+    padding: 0px 0;
     list-style: none;
-    min-width: 200px;
+    /* min-width: 200px; */
     text-align: left;
     visibility: hidden;
     opacity: 0;
     margin-top: 20px;
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
-    background-color: #ffffff;
+    background-color: #f5f5f5;
     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.1); }
   #topnav .navigation-menu > li .submenu.megamenu {
     white-space: nowrap;
-    width: auto; }
+    width: 104px;
+    /* min-width: 20px; */
+    right: -1px; 
+    border-left: solid #9199a4 1px;
+    border-right: solid #9199a4 1px;
+  }
   #topnav .navigation-menu > li .submenu.megamenu > li {
     overflow: hidden;
     width: 200px;
@@ -2699,12 +2710,15 @@ body {
     padding: 8px 25px;
     clear: both;
     white-space: nowrap;
-    font-size: 15px;
-    color: #2d3b48;
+    font-size: 12px;
+    color: #738299;
     -webkit-transition: all .35s ease;
     transition: all .35s ease; }
   #topnav .navigation-menu > li .submenu li a:hover {
-    color: #5b6be8; }
+    color: #61a4ff; 
+    background-color: #eaeef1;
+    width: 102px
+  }
   #topnav .navigation-menu > li .submenu li span {
     display: block;
     padding: 8px 25px;
