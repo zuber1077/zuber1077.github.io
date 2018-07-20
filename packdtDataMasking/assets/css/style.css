@@ -2919,7 +2919,7 @@ File: Responsive
     position: relative;
     margin-bottom: -50px;
     padding-top: -10px;
-    margin-left: -949px;
+    margin-left: -906px;
 
   input.form-control::-webkit-input-placeholder {
     color: rgba($white, 0.7);
@@ -2947,6 +2947,6 @@ File: Responsive
 }
 
 .nowss{
-   margin-left: -1007px;
+   margin-left: -959px;
    margin-bottom: -51px;
  }
