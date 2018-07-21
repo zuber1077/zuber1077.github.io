@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Pack Data | Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- C3 charts css -->
+    <link href="assets/plugins/c3/c3.min.css" rel="stylesheet" type="text/css" />
+
+    <!--Chartist Chart CSS -->
+    <link rel="stylesheet" href="assets/plugins/chartist/css/chartist.min.css">
+            
+    <link href="assets/plugins/morris/morris.css" rel="stylesheet">
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/admin.css" rel="stylesheet" type="text/css">
+     <style>
+                  
+                    @media (min-width: 992px){
+                    .col-lg-3 {
+                        -webkit-box-flex: 0;
+                        -ms-flex: 0 0 25%;
+                        flex: 0 0 30%;
+                        max-width: 30%;
+                        margin-left: 10px;
+                        }
+                    }
+
+                    .grid-col div a{
+                            padding-top: 39px;
+                            padding-bottom: 39px;
+                            margin-top: 22px;
+                            margin-bottom: 35px;
+                    }
+                    .last-margin{
+                        margin-right: -20px;
+                    }
+                    .grid-col div a{
+                        color: #fff;
+                        border-radius: .25rem;
+                        box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.05);
+                        border: 0px solid;
+                    }
+                    .grid-col div a.blue{
+                        background: #75caff !important;
+                    }
+                    .grid-col div a.orange{
+                        background: #fbb474 !important;
+                    }
+                    .grid-col div a.green{
+                        background: #aed441 !important;
+                    }
+                    .grid-col div a {
+                        display: block;
+                    }
+                    .table td{
+                        border-top: 0px solid #dee2e6 !important;
+                    }
+
+                    .table > tbody > tr > td, .table > tfoot > tr > td, .table > thead > tr > td {
+                        padding: 12px 12px;
+                    }
+                    @media (min-width: 576px){
+                        .col-sm-4 {
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 33.333333%;
+                    flex: 0 0 33.333333%;
+                    max-width: 29%;
+                  }}
+                  .table > tbody > tr > td, .table > tfoot > tr > td, .table > thead > tr > td {
+                       padding: 0px 12px;
+                        }
+                  /* .table > tbody > tr.table2 > td {
+                       padding: 2px 12px;
+                        } */
+                        .table > tbody > tr > td, .table > tfoot > tr > td, .table > thead > tr > td {
+                            font-size: 14px;
+                        }
+                        .table > tbody > tr > td.number{
+                            font-size: 18px;
+                        }
+                        .heights{
+                            height: 500px;
+                        }
+                </style>
+
+</head>
+<body>
+    <!-- Navigation Bar-->
+    <header id="topnav">
+        <div class="topbar-main">
+            <div class="container-fluid">
+    
+                <!-- Logo container-->
+                <div class="logo">
+                    <!-- Text Logo -->
+                    <!--<a href="index.html" class="logo">-->
+                    <!--Annex-->
+                    <!--</a>-->
+                    <!-- Image Logo -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo-sm.png" alt="" height="22" class="logo-small">
+                        <img src="assets/images/logo.png" alt="" width="80"  class="logo-large">
+                    </a>
+    
+                </div>
+                
+                <!-- End Logo container-->
+    
+                <div class="menu-extras topbar-custom">
+    
+                    <ul class="list-inline float-right mb-0">
+                        <li class="list-inline-item dropdown notification-list hide-phone">
+                            <a class="nowss nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                aria-expanded="false">
+                                项目
+                            </a>
+                        </li>
+                        <!-- search -->
+
+                        <li class="hide-phone app-search">
+                            <form role="search" class="">
+                                <input type="text" placeholder="搜索所有项目" class="form-control">
+                                <a href="">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </form>
+                        </li>
+
+                        <!-- search -->
+                        <!-- logout-->
+                        <li class="list-inline-item dropdown notification-list hide-phone">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                aria-expanded="false">
+                                姜毅
+                            </a>
+                        </li>
+                        <!-- User-->
+                        <li class="list-inline-item dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                aria-expanded="false">
+                                <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle">
+                            </a>
+                        </li>
+                        
+                        <li class="list-inline-item dropdown notification-list hide-phone">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                aria-expanded="false">
+                                退出
+                            </a>
+                        </li>
+                        <li class="list-inline-item dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                aria-expanded="false">
+                                <img src="assets/images/users/humbergernav.png" alt="user" style="height: 13px; width: 20px;">
+                            </a>
+                        </li>
+                        <li class="list-inline-item dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                aria-expanded="false">
+                                <img src="assets/images/users/avatar-q.png" alt="user" class="rounded-circle"style="height: 23px; width: 23px;">
+                            </a>
+                        </li>
+                        <!--  -->
+                        
+                        
+                        <li class="menu-item list-inline-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle nav-link">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </li>
+    
+                    </ul>
+                </div>
+                <!-- end menu-extras -->
+    
+                <div class="clearfix"></div>
+    
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end topbar-main -->
+    
+        <!-- MENU Start -->
+        <div class="navbar-custom">
+            <div class="container-fluid">
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+    
+                        <li class="has-submenu">
+                            <a href="index.html">
+                                 数据库系统
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </li>
+    
+                        <li class="has-submenu">
+                            <a href="#">
+                                 文件系统
+                            </a>
+                        </li>
+    
+                        <li class="has-submenu">
+                            <a href="#">
+                                 脱敏规则
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                              <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="pages-login.html">数据库系统</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-register.html">文件系统</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-recoverpw.html">脱敏规则</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul> 
+                        </li>
+                        
+    
+                        <li class="has-submenu">
+                            <a href="#">
+                                 文件夹管理
+                            </a>
+                        </li>
+    
+                        <li class="has-submenu">
+                            <a href="#">
+                                 脱敏引擎
+                            </a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#">
+                                 数据管理
+                            </a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#">
+                                 角色管理
+                            </a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#">
+                                 用户管理
+                            </a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#">
+                                 配置管理
+                            </a>
+                        </li>
+    
+                    </ul>
+                    <!-- End navigation menu -->
+                </div>
+                <!-- end #navigation -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end navbar-custom -->
+    </header>
+    <!-- End Navigation Bar-->
+
+
+    <div class="wrapper">
+            <div class="container-fluid">
+
+                <!-- Page-Title -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-title-box">
+                            <div class="btn-group pull-right">
+                                
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title end breadcrumb -->
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <h6 style="font-size: 16px;" class="page-title"><i class="fa fa-star"></i> 常用项目</h6>
+                                    <div class="text-center">
+                                        <div class="row grid-col round-inner">
+                                            <div class="col-lg-3">
+                                                <a href="" class="blue">身份证脱敏项目</a>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <a href="" class="orange">身份证脱敏项目</a>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <a href="" class="green">身份证脱敏项</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card bg-white">
+                             <div style="padding: -0rem;" class="card-body">
+                                    <p class="mt-0 header-title">敏感系统占比</p>
+                                <div id="pie-chart" style="height: 190px;"></div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card bg-white">
+                             <div style="padding: -0rem;" class="card-body">
+                                    <p class="mt-0 header-title">敏感系统占比</p>
+                                <div class="card-body">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>计费系统</td>
+                                                <td class="number">123,123,5 个</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>结算系统</td>
+                                                <td class="number">789,123 个</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>医疗系统</td>
+                                                <td class="number">345,096 个</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>结算系统</td>
+                                                <td class="number">789,123 个</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>医疗系统</td>
+                                                <td class="number">345,096 个</td>
+                                            </tr>                                            
+                                        </tbody>
+                                    </table>
+                    
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="card m-b-30">
+                                <div style="padding: -0rem;" class="card-body">
+                                    <h4 class="mt-0 header-title">应用状况统计表</h4>
+                                    <div id="stacked-bar-chart" class="ct-chart ct-golden-section" style="height: 460px;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3 heights">
+                            <div class="card bg-white">
+                                <div  style="padding: -0rem; height: 500px;" class="card-body">
+                                    <p class="mt-0 header-title">敏感数据统计</p>
+                                    <div id="donut-chart" style="height: 190px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card m-b-30">
+                                <div style="padding: 0px;" class="card-body">
+                                    <p class="mt-0 header-title">法律法规</p>
+                                    <table class="table">
+                                        <tbody>
+                                            <div class="table2">
+                                            <tr>
+                                                <td>《网络安全法》</td>
+                                                <td class="number">123,123,5 个</td>
+                                            </tr>
+                                    
+                                            <tr>
+                                                <td>《网络安全法》</td>
+                                                <td class="number">789,123 个</td>
+                                            </tr>
+                                    
+                                            <tr>
+                                                <td>《PDI》</td>
+                                                <td class="number">345,096 个</td>
+                                            </tr>
+                                    
+                                            <tr>
+                                                <td>《PII》</td>
+                                                <td class="number">789,123 个</td>
+                                            </tr>
+                                            </div>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card bg-white">
+                                <div class="">
+                                    <div style="padding: 0px;" class="card-body">
+                                        <p class="mt-0 header-title">字段</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        </div> <!-- end row -->
+                    </div> <!-- end container -->
+                </div> <!-- end Wraper  -->
+    
+                
+
+                
+
+<!-- jQuery  -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/modernizr.min.js"></script>
+<script src="assets/js/waves.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/jquery.nicescroll.js"></script>
+<script src="assets/js/jquery.scrollTo.min.js"></script>
+
+<script src="assets/plugins/skycons/skycons.min.js"></script>
+<script src="assets/plugins/raphael/raphael-min.js"></script>
+<script src="assets/plugins/morris/morris.min.js"></script>
+
+<!-- Chart JS -->
+<!-- <script src="assets/plugins/chart.js/chart.min.js"></script>
+<script src="assets/pages/chartjs.init.js"></script> -->
+
+<!--Morris Chart-->
+<script src="assets/plugins/morris/morris.min.js"></script>
+<script src="assets/plugins/raphael/raphael-min.js"></script>
+<script src="assets/pages/morris.init.js"></script>
+<!--Morris Chart-->
+<!-- <script src="assets/pages/crypto-exchange.init.js"></script> -->
+
+<!--C3 Chart-->
+<script type="text/javascript" src="assets/plugins/d3/d3.min.js"></script>
+<script type="text/javascript" src="assets/plugins/c3/c3.min.js"></script>
+<script src="assets/pages/c3-chart-init.js"></script>
+
+<!--Chartist Chart-->
+<script src="assets/plugins/chartist/js/chartist.min.js"></script>
+<script src="assets/plugins/chartist/js/chartist-plugin-tooltip.min.js"></script>
+<script src="assets/pages/chartist.init.js"></script>
+
+<!-- dashboard -->
+<!-- <script src="assets/pages/dashborad.js"></script> -->
+
+<!-- App js -->
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

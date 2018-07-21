@@ -1,0 +1,10 @@
+#topnav .navbar-custom{
+    background-color: #fff;
+}
+
+.has-submenu:hover{
+    background-color: #ffffff;
+    border-top: solid #d4d8dd 2px;
+    border-left: solid #d4d8dd 1px;
+    border-right: solid #d4d8dd 1px;;
+  }
