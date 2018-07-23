@@ -35,12 +35,12 @@ $(function () {
                 });
         }
     });
-    $('.rating').each(function () {
-        $('<span class="badge badge-info"></span>')
-            .text($(this).val() || ' ')
-            .insertAfter(this);
-    });
-    $('.rating').on('change', function () {
-        $(this).next('.badge').text($(this).val());
-    });
+    // $('.rating').each(function () {
+    //     $('<span class="badge badge-info"></span>')
+    //         .text($(this).val() || ' ')
+    //         .insertAfter(this);
+    // });
+    // $('.rating').on('change', function () {
+    //     $(this).next('.badge').text($(this).val());
+    // });
 });

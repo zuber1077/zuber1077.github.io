@@ -13,6 +13,9 @@
 
     <!--Chartist Chart CSS -->
     <link rel="stylesheet" href="assets/plugins/chartist/css/chartist.min.css">
+
+    <!-- Bootstrap rating css -->
+    <link href="assets/plugins/bootstrap-rating/bootstrap-rating.css" rel="stylesheet" type="text/css">
             
     <link href="assets/plugins/morris/morris.css" rel="stylesheet">
 
@@ -81,6 +84,7 @@
                         } */
                         .table > tbody > tr > td, .table > tfoot > tr > td, .table > thead > tr > td {
                             font-size: 14px;
+                            white-space: nowrap;
                         }
                         .table > tbody > tr > td.number{
                             font-size: 18px;
@@ -88,6 +92,38 @@
                         .heights{
                             height: 500px;
                         }
+                        .ion-ios7-pause,
+                            .ion-ios7-pause-outline{
+                             margin-left: 5px;
+                            }
+                            .text-primary{
+                                color: #ff8297 !important;
+                            }
+                            .text-danger{
+                                color: #fbb474 !important;
+                            }
+                            .text-alert{
+                                color: #aed441 !important;
+                            }
+                            .text-blue{
+                                color: #75caff !important;
+                            }
+                            .text-black{
+                                color: #526479 !important;
+                            }
+                            .graff{
+                                    min-width: 20px;
+                                }
+                                .table > tbody > tr > td.numbersm{
+                                    margin-left: -20px;
+                                }
+                                .ion-ios7-pause{
+                                    font-size: 22px;
+                                }
+                                .ion-ios7-pause-outline{
+                                    font-size: 22px;
+                                }
+
                 </style>
 
 </head>
@@ -412,15 +448,51 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="card bg-white">
-                                <div class="">
-                                    <div style="padding: 0px;" class="card-body">
-                                        <p class="mt-0 header-title">字段</p>
-                                    </div>
+                        <div class="card bg-white">
+                            <div class="">
+                                <div style="padding: 0px;" class="card-body">
+                                    <p class="mt-0 header-title">字段</p>
+                                    <table class="table">
+                                        <tbody>
+                                            <div class="table2">
+                                            <tr>
+                                                <td>发现字段</td>
+                                                <td class="graff"><input type="hidden" class="rating" data-start="1" data-stop="12" data-filled="ion-ios7-pause font-32 text-primary" data-empty="ion-ios7-pause-outline font-32 text-muted" value="12"
+                                            /></td>
+                                            <td class="numbersm">100%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>脱敏字段</td>
+                                                <td class="graff"><input type="hidden" class="rating" data-start="1" data-stop="10" data-filled="ion-ios7-pause font-32 text-danger" data-empty="ion-ios7-pause-outline font-32 text-muted" value="10"
+                                            /></td>
+                                            <td class="numbersm">82.9%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>发现字段</td>
+                                                <td class="graff"><input type="hidden" class="rating" data-start="1" data-stop="8" data-filled="ion-ios7-pause font-32 text-alert" data-empty="ion-ios7-pause-outline font-32 text-muted" value="8"
+                                            /></td>
+                                            <td class="numbersm">78.1%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>发现字段</td>
+                                                <td class="graff"><input type="hidden" class="rating" data-start="1" data-stop="7" data-filled="ion-ios7-pause font-32 text-blue" data-empty="ion-ios7-pause-outline font-32 text-muted" value="7"
+                                            /></td>
+                                            <td class="numbersm">65%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>发现字段</td>
+                                                <td class="graff"><input type="hidden" class="rating" data-start="1" data-stop="6" data-filled="ion-ios7-pause font-32 text-black" data-empty="ion-ios7-pause-outline font-32 text-muted" value="6"
+                                            /></td>
+                                            <td class="numbersm">49%</td>
+                                            </tr>
+                                            </div>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
-                        </div>
-
+                            <style>
+                                
+                            </style>
 
                         </div> <!-- end row -->
                     </div> <!-- end container -->
@@ -464,6 +536,10 @@
 <script src="assets/plugins/chartist/js/chartist.min.js"></script>
 <script src="assets/plugins/chartist/js/chartist-plugin-tooltip.min.js"></script>
 <script src="assets/pages/chartist.init.js"></script>
+
+<!-- Bootstrap rating js -->
+<script src="assets/plugins/bootstrap-rating/bootstrap-rating.min.js"></script>
+<script src="assets/pages/rating-init.js"></script>
 
 <!-- dashboard -->
 <!-- <script src="assets/pages/dashborad.js"></script> -->

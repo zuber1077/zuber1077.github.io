@@ -1111,7 +1111,7 @@ code {
 .card {
   border: none;
   box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.05); 
-  border: #ddd solid 2px;
+  border: #ddd solid 1px;
 }
 
 .card-primary {
