@@ -1564,6 +1564,8 @@ th {
   vertical-align: middle; 
   color: #686868;
   font-size: 13px;
+  background-color: #fff;
+  text-align: center;
 }
 .table > tbody > tr > td.red{
   color: #ff6b7b !important;

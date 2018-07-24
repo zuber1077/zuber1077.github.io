@@ -1,0 +1,93 @@
+.number{
+  font-size: 27.76px;
+}
+
+.info-card {
+  display: none;
+  background-color: #738299;
+  color: #fff;
+  border-radius: 4px;
+  border-color: #738299;
+  width: 94px;
+  height: 37px;
+  font-size: 14px;
+  text-align: center;
+  z-index: 2;
+  margin-top: -20px;
+  justify-content: center;
+  align-items: content;
+}
+
+.info-card .arrow {
+  border-style: solid;
+  position: absolute;
+  border-color: #738299 transparent transparent transparent;
+  border-width: 8px 8px 0px 8px;
+  bottom: -8px;
+  left: 45px;
+}
+
+.bar-graph-container {
+    width: 42%;
+    height: 217px;
+    display: inline-block;
+    min-width: 340px;
+    margin-left: 3%;
+    position: relative;
+    top: 49px;
+}
+
+.x-axis-label {
+  position: relative;
+  bottom: -3px;
+  font-size: 12px;
+}
+
+.y-axis-labels {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20px;
+  float: left;
+  margin-right: 3%;
+  margin-top: -10px;
+  text-align: right;
+  font-size: 9px;
+}
+
+.vertical .progress-bar {
+  float: left;
+  height: 100%;
+  width: 2%;
+  margin-right: 2.5%;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.vertical .progress-track {
+  position: relative;
+  height: 100%;
+  background: #eeeeee;
+  border-radius: 3px;
+}
+
+.vertical .progress-fill {
+  position: relative;
+  background: #56a8fc;
+  height: 50%;
+  width: 100%;
+  color: transparent;
+  overflow: hidden;
+  text-align: center;
+  font-family: "Lato","Verdana",sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 3px;
+}
+
+
+
+.vertical .progress-fill:hover {
+  background: #56a8fc;
+  color: transparent;
+}

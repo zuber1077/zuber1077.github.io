@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Pack Data | Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- C3 charts css -->
+    <link href="assets/plugins/c3/c3.min.css" rel="stylesheet" type="text/css" />
+
+    <!--Chartist Chart CSS -->
+    <link rel="stylesheet" href="assets/plugins/chartist/css/chartist.min.css">
+            
+    <link href="assets/plugins/morris/morris.css" rel="stylesheet">
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/chart.css" rel="stylesheet" type="text/css">
+</head>
+
+<style>
+    .bottom-center{
+        margin-top: 7px;
+        margin-left: 17px;
+        color: #3f3f3f;
+        font-weight: 500;
+        font-size: 13px;
+    }
+    .bottom-ce{
+        text-align: center;
+    }
+    .page-link{
+        color: #3f3f3f;
+        border: 0px solid #dee2e6;
+    }
+    .backward, .nexter{
+        background-color: #f5f5f5 !important;
+    }
+    .with_nav #main_nav {
+    display: block;
+}
+#main_nav:target {
+    display: block;
+}
+
+@media (min-width: 768px){
+.col-md-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 23%;
+    }
+}
+.waves-effect{
+    padding: 0.25rem 0.5rem;
+    margin-top: -4px;
+}
+.btn-warning:hover{
+    color: #fff;
+}
+.table thead th{
+    color: #3d3e42;
+}
+.table tbody tr th{
+    color: #3d3e42;
+}
+</style>
+<body>
+    <!-- Navigation Bar-->
+    <header id="topnav">
+        <div class="topbar-main">
+            <div class="container-fluid">
+    
+                <!-- Logo container-->
+                <div class="logo">
+                    <!-- Text Logo -->
+                    <!--<a href="index.html" class="logo">-->
+                    <!--Annex-->
+                    <!--</a>-->
+                    <!-- Image Logo -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo-sm.png" alt="" height="22" class="logo-small">
+                        <img src="assets/images/logo.png" alt="" width="80"  class="logo-large">
+                    </a>
+    
+                </div>
+                
+                <!-- End Logo container-->
+    
+                <div class="menu-extras topbar-custom">
+    
+                    <ul class="list-inline float-right mb-0">
+                        <li class="list-inline-item dropdown notification-list hide-phone" id="access_nav">
+                            <a href="href="#main_nav"" class="access_aid nowss nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                aria-expanded="false">
+                                项目
+                            </a>
+                        </li>
+                        <!-- search -->
+
+                        <li class="hide-phone app-search">
+                            <form role="search" class="">
+                                <input type="text" placeholder="搜索所有项目" class="form-control">
+                                <a href="">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </form>
+                        </li>
+
+                        <!-- search -->
+                        <!-- logout-->
+                        <li class="list-inline-item dropdown notification-list hide-phone">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                aria-expanded="false">
+                                姜毅
+                            </a>
+                        </li>
+                        <!-- User-->
+                        <li class="list-inline-item dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                aria-expanded="false">
+                                <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle">
+                            </a>
+                        </li>
+                        
+                        <li class="list-inline-item dropdown notification-list hide-phone">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                aria-expanded="false">
+                                退出
+                            </a>
+                        </li>
+                        <li class="list-inline-item dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                aria-expanded="false">
+                                <img src="assets/images/users/humbergernav.png" alt="user" style="height: 13px; width: 20px;">
+                            </a>
+                        </li>
+                        <li class="list-inline-item dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                aria-expanded="false">
+                                <img src="assets/images/users/avatar-q.png" alt="user" class="rounded-circle"style="height: 23px; width: 23px;">
+                            </a>
+                        </li>
+                        <!--  -->
+                        
+                        
+                        <li class="menu-item list-inline-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle nav-link">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </li>
+    
+                    </ul>
+                </div>
+                <!-- end menu-extras -->
+    
+                <div class="clearfix"></div>
+    
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end topbar-main -->
+    
+        <!-- MENU Start -->
+        <div class="navbar-custom">
+            <div class="container-fluid">
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+    
+                        <li class="has-submenu">
+                            <a href="index.html">
+                                首页</a>
+                        </li>
+    
+                        <li class="has-submenu">
+                            <a href="#">
+                                敏感数据发现
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </li>
+    
+                        <li class="has-submenu">
+                            <a href="#">
+                                敏感脱敏
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </li>
+                        
+    
+                        <li class="has-submenu">
+                            <a href="#">
+                                调度管理
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </li>
+    
+                        <li class="has-submenu">
+                            <a href="#">
+                                监控与审计
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="pages-login.html">数据库系统</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-register.html">文件系统</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-recoverpw.html">脱敏规则</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#">
+                                设置
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="pages-login.html">数据库系统</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-register.html">文件系统</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-recoverpw.html">脱敏规则</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                    </ul>
+                    <!-- End navigation menu -->
+                </div>
+                <!-- end #navigation -->
+            </div>
+            <!-- end container -->
+        </div>
+
+
+        
+        <style>
+        #main_nav {
+            display: none;
+        }
+        </style>
+        <!-- end second -->
+
+        <div class="navbar-custom" id="main_nav">
+            <div class="container-fluid">
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+        
+                        <li class="has-submenu">
+                            <a href="index.html">
+                                数据库系统
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </li>
+        
+                        <li class="has-submenu">
+                            <a href="#">
+                                文件系统
+                            </a>
+                        </li>
+        
+                        <li class="has-submenu">
+                            <a href="#">
+                                脱敏规则
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="pages-login.html">数据库系统</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-register.html">文件系统</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-recoverpw.html">脱敏规则</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+        
+        
+                        <li class="has-submenu">
+                            <a href="#">
+                                文件夹管理
+                            </a>
+                        </li>
+        
+                        <li class="has-submenu">
+                            <a href="#">
+                                脱敏引擎
+                            </a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#">
+                                数据管理
+                            </a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#">
+                                角色管理
+                            </a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#">
+                                用户管理
+                            </a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#">
+                                配置管理
+                            </a>
+                        </li>
+        
+                    </ul>
+                    <!-- End navigation menu -->
+                </div>
+                <!-- end #navigation -->
+            </div>
+            <!-- end container -->
+        </div>
+
+       
+
+        <!-- end navbar-custom -->
+    </header>
+    <!-- End Navigation Bar-->
+    <br><br>
+    <style>
+        .card-body {
+            padding: 0;
+        }
+    
+        .ct-horizontal {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            margin-top: 5px;
+            margin-left: -12px;
+        }
+    
+        .header-title {
+            background-color: #eaeef1 !important;
+        }
+    
+        .table thead th {
+            text-align: center;
+        }
+    
+        .table-secondary,
+        .table-secondary>td,
+        .table-secondary>th {
+            background-color: #ebeff2 !important;
+        }
+        .page-item.active .page-link{
+        background-color:transparent;
+        border-color: transparent;
+        color: #ff0101;
+        }
+    
+        /* // 28 31 */
+    </style>
+
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card-body">
+                        <div class="table-responsive-sm">
+                            <table class="table">
+                                <thead class="thead-default">
+                                    <tr>
+                                        <th style="text-align: left; background-color: #fff;">项目</th>
+                                        <th style="background-color: #fff;"></th>
+                                        <th style="background-color: #fff;"></th>
+                                        <th style="text-align: right; background-color: #fff;">新建项目/项目</th>
+                                    </tr>
+                                </thead-[>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="5"> 
+                                            <div class="col-sm-12 col-md-6">
+                                                <form role="search" class="">
+                                                        <input type="text" placeholder="搜索所有项目" class="form-control">
+                                                        <a style="    position: absolute;top: -1px;left: 258px;display: block;height: 34px;line-height: 40px;width: 34px;text-align: center;" href="">
+                                                            <i class="fa fa-search"></i>
+                                                        </a>
+                                                </form>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <!-- <h5 class="header-title">Contextual classes </h5> -->
+                    <div class="card m-b-30">
+                        <div  class="card-body">
+                            <div class="table-responsive-sm">
+                                <table class="table">
+                                    <thead class="thead-default">
+                                        <tr>
+                                            <th>项目名称</th>
+                                            <th>创建时间</th>
+                                            <th>创建时间</th>
+                                            <th>操作人</th>
+                                            <th>操作</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>项目名称1</td>
+                                            <td>2117-06-01 12:09:52</td>
+                                            <td>2118-04-12 09:45:13</td>
+                                            <td>masking</td>
+                                            <td>
+                                            <a href=""><i class="mdi mdi-eye"></i> 详情</a> <a href="">&nbsp;&nbsp;<i class="fa fa-edit (alias)"></i> 编辑</a> 
+                                            <a href="">&nbsp;&nbsp;<i class="fa fa-trash-o"></i> 删除</a></td>
+                                            <td class="red">未完成</td>
+                                        </tr>
+                                        <tr>
+                                            <td>项目名称1</td>
+                                            <td>2117-06-01 12:09:52</td>
+                                            <td>2118-04-12 09:45:13</td>
+                                            <td>masking</td>
+                                            <td><a href=""><i class="mdi mdi-eye"></i> 详情</a> <a href="">&nbsp;<i class="fa fa-edit (alias)"></i> 编辑</a> <a href="">&nbsp;<i class="fa fa-trash-o"></i> 删除</a></td>
+                                            <td>已完成</td>
+                                        </tr>
+                                        <tr>
+                                            <td>项目名称1</td>
+                                            <td>2117-06-01 12:09:52</td>
+                                            <td>2118-04-12 09:45:13</td>
+                                            <td>masking</td>
+                                            <td><a href=""><i class="mdi mdi-eye"></i> 详情</a> <a href="">&nbsp;<i class="fa fa-edit (alias)"></i> 编辑</a> <a href="">&nbsp;<i class="fa fa-trash-o"></i> 删除</a></td>
+                                            <td>已完成</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                            <label></label><div class="bottom-ce">每页显示</div>
+                                                <select name="datatable_length" aria-controls="datatable" class="form-control form-control-sm">
+                                                    <option value="10">10</option>
+                                                    <option value="25">25</option>
+                                                    <option value="50">50</option>
+                                                    <option value="100">100</option>
+                                                </select><div class="bottom-ce">行</div>
+                                            </label>
+                                        </td>
+                                        <td></td>
+                                        <td colspan="5">
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination">
+                                                    <li class="page-item">
+                                                        <a class="page-link backward" href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">&laquo;</span>
+                                                            <span class="sr-only">Previous</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item active">
+                                                        <a class="page-link" href="#">1</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">2</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">3</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">4</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">...</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">20</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link nexter" href="#" aria-label="Next">
+                                                            <span aria-hidden="true">&raquo;</span>
+                                                            <span class="sr-only">Next</span>
+                                                        </a>
+                                                    </li>
+                                                     <div class="bottom-center">共 10 页 144条</div>
+                                                </ul>
+                                            </nav>
+                                        </td>
+                                            
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </div>
+
+     <script>
+        var nav = document.getElementById('access_nav'),
+                body = document.body;
+
+            nav.addEventListener('click', function (e) {
+                body.className = body.className ? '' : 'with_nav';
+                e.preventDefault();
+            });
+        </script>
+                
+
+<!-- jQuery  -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/modernizr.min.js"></script>
+<script src="assets/js/waves.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/jquery.nicescroll.js"></script>
+<script src="assets/js/jquery.scrollTo.min.js"></script>
+
+
+<script src="assets/plugins/skycons/skycons.min.js"></script>
+<script src="assets/plugins/raphael/raphael-min.js"></script>
+<script src="assets/plugins/morris/morris.min.js"></script>
+<!-- App js -->
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
