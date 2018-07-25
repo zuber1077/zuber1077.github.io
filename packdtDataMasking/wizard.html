@@ -7,19 +7,13 @@
     <title>Pack Data | Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="assets/images/favicon.ico">
-
-    <!-- C3 charts css -->
-    <link href="assets/plugins/c3/c3.min.css" rel="stylesheet" type="text/css" />
-
-    <!--Chartist Chart CSS -->
-    <link rel="stylesheet" href="assets/plugins/chartist/css/chartist.min.css">
-            
-    <link href="assets/plugins/morris/morris.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
 
     <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/chart.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/wizard.css" rel="stylesheet" type="text/css">
+    <style></style>
 </head>
 
 <style>
@@ -428,201 +422,44 @@
                                         <th style="text-align: right; background-color: #fff;">新建项目/项目</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td colspan="6"> 
-                                            <div class="col-md-12 col-md-6">
-                                                <form style="display: -webkit-box;" role="search" class="">
-                                                        <input type="text" placeholder="搜索所有项目" class="form-control">
-                                                        <button style="margin-bottom: -18px;margin-left: 6px;" type="button" class="btn btn-warning waves-effect waves-light">增加项目</button>
-                                                        <a style="    position: absolute;top: -1px;left: 258px;display: block;height: 34px;line-height: 40px;width: 34px;text-align: center;" href="">
-                                                            <i class="fa fa-search"></i>
-                                                        </a>
-                                                        
-                                                </form>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
-            </div><br>
+            </div>
 
             <div class="row">
                 <div class="col-sm-12">
-                    <!-- <h5 class="header-title">Contextual classes </h5> -->
-                    <div class="card m-b-30">
-                        <div  class="card-body">
-                            <div class="table-responsive-sm">
-                                <table class="table">
-                                    <thead class="thead-default">
-                                        <tr>
-                                            <th>项目名称</th>
-                                            <th>创建时间</th>
-                                            <th>创建时间</th>
-                                            <th>操作人</th>
-                                            <th>操作</th>
-                                            <th>操作</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>项目名称1</td>
-                                            <td>2117-06-01 12:09:52</td>
-                                            <td>2118-04-12 09:45:13</td>
-                                            <td>masking</td>
-                                            <td>
-                                            <a href=""><i class="mdi mdi-eye"></i> 详情</a> <a href="">&nbsp;&nbsp;<i class="fa fa-edit (alias)"></i> 编辑</a> 
-                                            <a href="">&nbsp;&nbsp;<i class="fa fa-trash-o"></i> 删除</a></td>
-                                            <td class="red">未完成</td>
-                                        </tr>
-                                        <tr>
-                                            <td>项目名称1</td>
-                                            <td>2117-06-01 12:09:52</td>
-                                            <td>2118-04-12 09:45:13</td>
-                                            <td>masking</td>
-                                            <td><a href=""><i class="mdi mdi-eye"></i> 详情</a> <a href="">&nbsp;<i class="fa fa-edit (alias)"></i> 编辑</a> <a href="">&nbsp;<i class="fa fa-trash-o"></i> 删除</a></td>
-                                            <td>已完成</td>
-                                        </tr>
-                                        <tr>
-                                            <td>项目名称1</td>
-                                            <td>2117-06-01 12:09:52</td>
-                                            <td>2118-04-12 09:45:13</td>
-                                            <td>masking</td>
-                                            <td><a href=""><i class="mdi mdi-eye"></i> 详情</a> <a href="">&nbsp;<i class="fa fa-edit (alias)"></i> 编辑</a> <a href="">&nbsp;<i class="fa fa-trash-o"></i> 删除</a></td>
-                                            <td>已完成</td>
-                                        </tr>
-                                        <tr>
-                                            <td>&nbsp;</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>&nbsp;</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>&nbsp;</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>&nbsp;</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>&nbsp;</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>&nbsp;</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td olspan="2">
-                                            <div style="display: -webkit-box; margin-left: 10px;">
-                                                <div class="bottom-ce">每页显示</div>
-                                                <select name="datatable_length" aria-controls="datatable" class="form-control form-control-sm">
-                                                    <option value="10">10</option>
-                                                    <option value="25">25</option>
-                                                    <option value="50">50</option>
-                                                    <option value="100">100</option>
-                                                </select><div class="bottom-ce ye">行</div>
-                                            </div>
-                                        </td>
-                                        <td></td>
-                                        <td colspan="5">
-                                            <nav aria-label="Page navigation example">
-                                                <ul class="pagination">
-                                                    <li class="page-item">
-                                                        <a class="page-link backward" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true">&laquo;</span>
-                                                            <span class="sr-only">Previous</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item active">
-                                                        <a class="page-link" href="#">1</a>
-                                                    </li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#">2</a>
-                                                    </li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#">3</a>
-                                                    </li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#">4</a>
-                                                    </li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#">...</a>
-                                                    </li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#">20</a>
-                                                    </li>
-                                                    <li class="page-item">
-                                                        <a class="page-link nexter" href="#" aria-label="Next">
-                                                            <span aria-hidden="true">&raquo;</span>
-                                                            <span class="sr-only">Next</span>
-                                                        </a>
-                                                    </li>
-                                                     <div class="bottom-center">共 10 页 144条</div>
-                                                </ul>
-                                            </nav>
-                                        </td>
-                                            
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="tabbable">
+                        <ul class="nav nav-tabs wizard">
+                            <li class="active">
+                                <a href="#i9" data-toggle="tab" aria-expanded="false">
+                                    <span class="nmbr">1</span>Step 01</a>
+                            </li>
+                            <li>
+                                <a href="#w4" data-toggle="tab" aria-expanded="false">
+                                    <span class="nmbr">2</span>Step 02</a>
+                            </li>
+                            <li>
+                                <a href="#stateinfo" data-toggle="tab" aria-expanded="false">
+                                    <span class="nmbr">3</span>Step 03</a>
+                            </li>
+                            <li>
+                                <a href="#companydoc" data-toggle="tab" aria-expanded="false">
+                                    <span class="nmbr">4</span>Step 04</a>
+                            </li>
+                            <li>
+                                <a href="#finish" data-toggle="tab" aria-expanded="true">
+                                    <span class="nmbr">5</span>Step 05</a>
+                            </li>
+                    
+                        </ul>
                 </div>
-            </div>        
+                </div>
+            </div>
+      
         </div>
     </div>
-
-
-
-    <!-- <script src="cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
-        $(document).ready(function () {
-
-            $("#menuTrigger").click(function () {
-                $("#second_nav").css("visibility", "visible");
-            });
-
-            $("#menuTrigger").click(function () {
-                $('#main_nav').css("visibility", "hidden");
-            });
-            
-
-            // $("#menuTrigger").mouseleave(function () {
-            //     $(" #second_nav").css("visibility", "hidden");
-            // });
-        });
-    </script> -->
 
 <script>
 function myFunction() {
@@ -656,7 +493,10 @@ function myFunction() {
 <script src="assets/js/jquery.nicescroll.js"></script>
 <script src="assets/js/jquery.scrollTo.min.js"></script>
 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
 
+<script src="assets/pages/wizard.js"></script>
 <script src="assets/plugins/skycons/skycons.min.js"></script>
 <script src="assets/plugins/raphael/raphael-min.js"></script>
 <script src="assets/plugins/morris/morris.min.js"></script>
