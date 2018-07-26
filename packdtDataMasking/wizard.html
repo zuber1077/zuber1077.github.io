@@ -7,13 +7,13 @@
     <title>Pack Data | Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="assets/images/favicon.ico">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
 
+    
     <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/bootstrap.css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="assets/css/wizard.css" rel="stylesheet" type="text/css">
-    <style></style>
 </head>
 
 <style>
@@ -73,6 +73,12 @@
 .form-control-sm{
     display: -webkit-inline-box;
     }
+    .table > thead > tr > th{
+        border-bottom: 0px solid #ddd;
+    }
+    .dropdown-divider {
+    margin: 0.0rem 0;
+    }
 </style>
 <body>
     <!-- Navigation Bar-->
@@ -100,10 +106,34 @@
     
                     <ul class="list-inline float-right mb-0">
                         <li class="list-inline-item dropdown notification-list hide-phone" id="access_nav">
-                            <a href="href="#main_nav"" class="access_aid nowss nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                            <a href="#" class="access_aid nowss nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
                                 aria-expanded="false">
-                                项目
+                                项目 <i class="fa fa-sort-desc"></i>
                             </a>
+                            <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                <!-- item-->
+                                <div class="dropdown-item noti-title">
+                                    <h5>新建项目</h5>
+                                </div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa fa-list m-r-5 text-muted"></i> 我创建的项目</a>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="m-r-5 text-muted"></i> 脱敏产品</a>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="m-r-5 text-muted"></i>数据清洗</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa fa-list m-r-5 text-muted"></i> 我参与的项目
+                                    
+                                </a>
+                                    <div class="dropdown-divider"></div>
+                                
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa fa-list m-r-5 text-muted"></i> 所有项目</a>
+                            </div>
                         </li>
                         <!-- search -->
 
@@ -373,11 +403,7 @@
     </header>
     <!-- End Navigation Bar-->
     <br><br>
-    <style>
-        .card-body {
-            padding: 0;
-        }
-    
+    <style>    
         .ct-horizontal {
             writing-mode: vertical-rl;
             text-orientation: upright;
@@ -411,18 +437,20 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="card-body">
-                        <div class="table-responsive-sm">
-                            <table class="table">
-                                <thead class="thead-default">
-                                    <tr>
-                                        <th style="text-align: left; background-color: #fff;">项目</th>
-                                        <th style="background-color: #fff;"></th>
-                                        <th style="background-color: #fff;"></th>
-                                        <th style="text-align: right; background-color: #fff;">新建项目/项目</th>
-                                    </tr>
-                                </thead>
-                            </table>
+                    <div class="card m-b-30">
+                        <div class="card-body">
+                            <div class="table-responsive-sm">
+                                <table class="table">
+                                    <thead class="thead-default">
+                                        <tr>
+                                            <th style="text-align: left; background-color: #fff;">项目</th>
+                                            <th style="background-color: #fff;"></th>
+                                            <th style="background-color: #fff;"></th>
+                                            <th style="text-align: right; background-color: #fff;">新建项目/项目</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -430,31 +458,37 @@
 
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="tabbable">
-                        <ul class="nav nav-tabs wizard">
-                            <li class="active">
-                                <a href="#i9" data-toggle="tab" aria-expanded="false">
-                                    <span class="nmbr">1</span>Step 01</a>
-                            </li>
-                            <li>
-                                <a href="#w4" data-toggle="tab" aria-expanded="false">
-                                    <span class="nmbr">2</span>Step 02</a>
-                            </li>
-                            <li>
-                                <a href="#stateinfo" data-toggle="tab" aria-expanded="false">
-                                    <span class="nmbr">3</span>Step 03</a>
-                            </li>
-                            <li>
-                                <a href="#companydoc" data-toggle="tab" aria-expanded="false">
-                                    <span class="nmbr">4</span>Step 04</a>
-                            </li>
-                            <li>
-                                <a href="#finish" data-toggle="tab" aria-expanded="true">
-                                    <span class="nmbr">5</span>Step 05</a>
-                            </li>
-                    
-                        </ul>
-                </div>
+                     <div class="card m-b-30">
+                        <div class="card-body">
+                                <div class="tabbable">
+                                    <ul class="nav nav-tabs wizard">
+                                        <li class="active">
+                                            <a href="#i9" data-toggle="tab" aria-expanded="false">
+                                                1.调度管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="#w4" data-toggle="tab" aria-expanded="false">
+                                                2.数据源</a>
+                                        </li>
+                                        <li>
+                                            <a href="#stateinfo" data-toggle="tab" aria-expanded="false">
+                                                3.数据域</a>
+                                        </li>
+                                        <li>
+                                            <a href="#companydoc" data-toggle="tab" aria-expanded="false">
+                                                4.完成</a>
+                                        </li>
+                                    </ul>
+                                     <div class="col-sm-11 mx-auto">
+                                         <div class="card m-b-30 centeri">
+                                             <div class="card-body">
+                                                 <p>业务系统名称： 项目名称1</p>
+                                             </div>
+                                         </div>
+                                     </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
       

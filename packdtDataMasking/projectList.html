@@ -79,6 +79,32 @@
 .form-control-sm{
     display: -webkit-inline-box;
     }
+
+    #border:active{
+    border-top: solid #f8f8f8 3px;
+    border-left: solid #d4d8dd 1px;
+    border-right: solid #d4d8dd 1px;
+    }
+    #border:hover{
+    border-top: solid #f8f8f8 3px;
+    border-left: solid #d4d8dd 1px;
+    border-right: solid #d4d8dd 1px;
+    }
+    #border:checked{
+    border-top: solid #f8f8f8 3px;
+    border-left: solid #d4d8dd 1px;
+    border-right: solid #d4d8dd 1px;
+    }
+    #border:focus{
+    border-top: solid #f8f8f8 3px;
+    border-left: solid #d4d8dd 1px;
+    border-right: solid #d4d8dd 1px;
+    }
+    #border:focus-within{
+    border-top: solid #f8f8f8 3px;
+    border-left: solid #d4d8dd 1px;
+    border-right: solid #d4d8dd 1px;
+    }
 </style>
 <body>
     <!-- Navigation Bar-->
@@ -144,7 +170,7 @@
                                 退出
                             </a>
                         </li>
-                        <li  class="list-inline-item dropdown notification-list">
+                        <li  class="list-inline-item dropdown notification-list" id="border">
                             <!-- <a  class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
                                 aria-expanded="false" >
                                 <img src="assets/images/users/humbergernav.png" alt="user" style="height: 13px; width: 20px;">
@@ -474,7 +500,7 @@
                                             <td>2118-04-12 09:45:13</td>
                                             <td>masking</td>
                                             <td>
-                                            <a href=""><i class="mdi mdi-eye"></i> 详情</a> <a href="">&nbsp;&nbsp;<i class="fa fa-edit (alias)"></i> 编辑</a> 
+                                            <a href=""><i class="mdi mdi-eye"></i> 详情</a> <a href="">&nbsp;&nbsp;<i class="fa fa-check-square-o"></i> 编辑</a> 
                                             <a href="">&nbsp;&nbsp;<i class="fa fa-trash-o"></i> 删除</a></td>
                                             <td class="red">未完成</td>
                                         </tr>
@@ -630,18 +656,19 @@ function myFunction() {
     var y = document.getElementById("main_nav");
     if(y.style.visibility === "visible"){
         y.style.visibility = "hidden";
-        y.style.transition = "0.5s";
+        // y.style.transition = "0.5s";
     }else{
         y.style.visibility = "visible";
-        y.style.transition = "0.3s";
+        // y.style.transition = "0.3s";
     }
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
         x.style.margin = "-58px 0px 0px 0px";
-        x.style.transition = "0.5s";
+        // x.style.transition = "0.5s";
+        x.style.background = "#dfe3e6";
     } else {
         x.style.visibility = "hidden";
-        x.style.transition = "0.5s";
+        // x.style.transition = "0.5s";
     }
 }
 </script>

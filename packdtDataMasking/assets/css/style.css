@@ -433,9 +433,9 @@ code {
 
 .dropdown-menu {
   padding: 4px 0;
-  font-size: 15px;
+  font-size: 14px;
   box-shadow: 0 2px 30px rgba(0, 0, 0, 0.08);
-  border-color: #eff3f6; }
+  border-color: #686868; }
 
 .dropdown-item.active, .dropdown-item:active {
   color: #2d3b48;
@@ -2418,7 +2418,8 @@ body {
   transition: all .5s ease;
   min-height: 62px; }
   #topnav .dropdown.show .nav-link {
-    background-color: rgba(255, 255, 255, 0.2); }
+    /* background-color: rgba(255, 255, 255, 0.2); */ 
+  } 
   #topnav .language-switch a img {
     float: right;
     margin-top: 5px; }
@@ -2916,6 +2917,7 @@ File: Responsive
     box-shadow: none;
     border-radius: 30px;
     width: 255px;
+    margin-left: 16px;
 }
 .app-search {
     position: relative;
