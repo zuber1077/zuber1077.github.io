@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/bootstrap.css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="assets/css/wizard.css" rel="stylesheet" type="text/css">
+    <!-- <link href="assets/css/bootstrap-extended.css" rel="stylesheet" type="text/css"> -->
 </head>
 
 <style>
@@ -74,11 +75,69 @@
     display: -webkit-inline-box;
     }
     .table > thead > tr > th{
-        border-bottom: 0px solid #ddd;
+        border-bottom: 1px solid #ddd;
     }
+    .table > tbody > tr  {
+        border-top: 1px solid #ddd;
+    }
+    
+    .table > tbody > tr.border_bold  {
+        /* border-left: 3px solid #50abfa; */
+    }
+    
     .dropdown-divider {
     margin: 0.0rem 0;
     }
+    .col-10 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 80.00000%;
+    margin-left: 138px;
+    margin-top: 30px;
+    }
+    .titles{
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+    .text-first{
+        margin-left: -84px;
+        margin-top: -50px;
+    }
+    @media (min-width: 768px){
+.lead {
+    font-size: 14px;
+    color: #3d3e42;
+    }
+}
+a:hover{
+    color: #3d3e42;
+}
+.p-3 {
+    padding: 0rem !important;
+    
+    }
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+    /* tr:hover {background-color: #f5f5f5;} */
+
 </style>
 <body>
     <!-- Navigation Bar-->
@@ -413,6 +472,8 @@
     
         .header-title {
             background-color: #eaeef1 !important;
+            text-align: center;
+            font-size: 16px;
         }
     
         .table thead th {
@@ -429,7 +490,56 @@
         border-color: transparent;
         color: #ff0101;
         }
-    
+        #headingCollapse11{
+            margin-top: -12px;
+            margin-bottom: 7px;
+        }
+        #headingCollapses1{
+            margin-top: -12px;
+            margin-bottom: 7px;
+        }
+        .table tbody tr th{
+            font-size: 14px;
+        }
+        .header-title {
+         background-color: #dfe3e6 !important;
+        }
+        .panel-title{
+            border-left: 3px solid #50abfa;
+        }
+        .panel-title > a {
+        display: block;
+        position: relative;
+        margin-bottom: 7px;
+        margin-top: 4px;
+        }
+        .panel-title > a:after {
+        content: "\e65f"; /* fa-chevron-down */
+        font-family: 'themify';
+        position: absolute;
+        right: 0;
+        }
+        .panel-title > a[aria-expanded="true"]:after {
+        content: "\e65c"; /* fa-chevron-up */
+        }
+
+        .table {
+            margin-bottom: -8px;
+        }
+
+        table td {
+            padding: 12px;
+        }
+
+		 .rotate {
+            white-space:nowrap;
+             -webkit-transform: rotate(270deg);
+             -moz-transform: rotate(270deg);
+             -o-transform: rotate(270deg);
+            writing-mode: lr-tb;
+          }
+
+
         /* // 28 31 */
     </style>
   
@@ -440,7 +550,7 @@
                     <div class="card m-b-30">
                         <div class="card-body">
                             <div class="table-responsive-sm">
-                                <table class="table">
+                                <table style="margin-bottom: -4px;" class="table">
                                     <thead class="thead-default">
                                         <tr>
                                             <th style="text-align: left; background-color: #fff;">项目</th>
@@ -479,13 +589,475 @@
                                                 4.完成</a>
                                         </li>
                                     </ul>
-                                     <div class="col-sm-11 mx-auto">
-                                         <div class="card m-b-30 centeri">
-                                             <div class="card-body">
-                                                 <p>业务系统名称： 项目名称1</p>
-                                             </div>
-                                         </div>
-                                     </div>
+<div class="col-sm-11 mx-auto">
+    <div class="card m-b-30 centeri">
+        <div class="card-body">
+            <p class="titles">业务系统名称： 项目名称1</p>
+        <div class="row">
+            <div class="col-10 auto">
+                <h4 class="mt-0 header-title">所有者名称</h4>
+                <div class="card m-b-30" style="height: 380px;">
+                    <div class="">
+                        <label for="example-text-input" class="col-sm-2 col-form-label text-first">数据源：</label>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-fixed">
+                            <ul class="list-unstyled mb-0 pr-3 smooth-scroll list-unstyled customer_details" id="boxscroll2" tabindex="1" style="overflow: hidden; outline: none; ">
+                                <li class="p-3">
+                                <table class="table">
+                                    <tbody>
+                                        <tr style="border-top: 0px solid #ddd;">
+                                            <th style="border-top: 0px solid #ddd;">
+                                                <div id="headingCollapse11" class="panel-title">
+                                                    <a data-toggle="collapse" href="#collapse11" aria-expanded="true" aria-controls="collapse11" class="lead">数据源2</a>
+                                                </div>
+                                                <div id="collapse11" role="tabpanel" aria-labelledby="headingCollapse11" class="collapse in show" style="" aria-expanded="true">
+                                                    <div class="card-content">
+                                                        <div class="">
+                                                            <table class="table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th></th>
+                                                                        <th></th>
+                                                                        <th></th>
+                                                                        <th>规则类型</th>
+                                                                    </tr>
+                                                                    <tr class="table-secondary">
+                                                                        <th></th>
+                                                                        <th></th>
+                                                                        <th></th>
+                                                                        <th>数据</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th></th>
+                                                                        <th></th>
+                                                                        <th></th>
+                                                                        <th>规则样例</th>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </li>
+                                <li class="p-3">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="border-top: 0px solid #ddd;">
+                                                    <div id="headingCollapse12" class="panel-title">
+                                                        <a data-toggle="collapse" href="#collapse12" aria-expanded="false" aria-controls="collapse12" class="lead collapsed">数据域名称3</a>
+                                                    </div>
+                                                    <div id="collapse12" role="tabpanel" aria-labelledby="headingCollapse12" class="collapse" style="">
+                                                        <div class="card-content">
+                                                            <div class="">
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>规则类型</th>
+                                                                        </tr>
+                                                                        <tr class="table-secondary">
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>数据</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>规则样例</th>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="p-3">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="border-top: 0px solid #ddd;">
+                                                    <div id="headingCollapse13" class="panel-title">
+                                                        <a data-toggle="collapse" href="#collapse13" aria-expanded="false" aria-controls="collapse13" class="lead collapsed">数据域名称3</a>
+                                                    </div>
+                                                    <div id="collapse13" role="tabpanel" aria-labelledby="headingCollapse13" class="collapse" style="">
+                                                        <div class="card-content">
+                                                            <div class="">
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>规则类型</th>
+                                                                        </tr>
+                                                                        <tr class="table-secondary">
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>数据</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>规则样例</th>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="p-3">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="border-top: 0px solid #ddd;">
+                                                    <div id="headingCollapse14" class="panel-title">
+                                                        <a data-toggle="collapse" href="#collapse14" aria-expanded="false" aria-controls="collapse14" class="lead collapsed">数据域名称4</a>
+                                                    </div>
+                                                    <div id="collapse14" role="tabpanel" aria-labelledby="headingCollapse14" class="collapse" style="">
+                                                        <div class="card-content">
+                                                            <div class="">
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>规则类型</th>
+                                                                        </tr>
+                                                                        <tr class="table-secondary">
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>数据</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>规则样例</th>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="p-3">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="border-top: 0px solid #ddd;">
+                                                    <div id="headingCollapse15" class="panel-title">
+                                                        <a data-toggle="collapse" href="#collapse15" aria-expanded="false" aria-controls="collapse15" class="lead collapsed">数据域名称3</a>
+                                                    </div>
+                                                    <div id="collapse15" role="tabpanel" aria-labelledby="headingCollapse15" class="collapse" style="">
+                                                        <div class="card-content">
+                                                            <div class="">
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>规则类型</th>
+                                                                        </tr>
+                                                                        <tr class="table-secondary">
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>数据</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>规则样例</th>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                
+                            </ul>
+                            
+
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+            <!-- end col -->
+        </div>
+        <div class="row">
+            <div class="col-10 auto">
+                <h4 class="mt-0 header-title">数据域名称</h4>
+                <div class="card m-b-30" style="height: 380px;">
+                    <div class="">
+                        <label for="example-text-input" class="col-sm-2 col-form-label text-first">数据域：</label>
+                    </div>
+                    <div style="padding: 0px;" class="card-body">
+                        <div class="table-fixed tbl-content">
+                            <ul class="list-unstyled mb-0 pr-3 smooth-scroll list-unstyled customer_details " id="boxscroll2" tabindex="1" style="overflow: hidden; outline: none; ">
+                                <li class="p-3">
+                                <table class="table">
+                                    <tbody>
+                                        <tr class="border_bold" style="border-top: 0px solid #ddd;">
+                                            <th style="border-top: 0px solid #ddd;">
+                                                <div id="headingCollapses1" class="panel-title">
+                                                    <a data-toggle="collapse" href="#collapses1" aria-expanded="false" aria-controls="collapses1" class="lead collapsed">数据域名称1</a>
+                                                </div>
+                                                <div id="collapses1" role="tabpanel" aria-labelledby="headingCollapses1" class="collapse" style="" aria-expanded="flase">
+                                                    <div class="card-content">
+                                                        <div class="">
+                                                            <table class="table">
+                                                                <tbody>
+                                                                    <tr> 
+                                                                        <th></th>
+                                                                        <th></th>
+                                                                        <th></th>
+                                                                        <th valign="bottom">规则类型</th>
+                                                                    </tr>
+                                                                    <tr class="table-secondary">
+                                                                        <th></th>
+                                                                        <th></th>
+                                                                        <th></th>
+                                                                        <th>数据</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th></th>
+                                                                        <th></th>
+                                                                        <th></th>
+                                                                        <th>规则样例</th>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </li>
+                                <li class="p-3">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr class="border_bold"> 
+                                                <th style="border-top: 0px solid #ddd;">
+                                                    <div id="headingCollapses2" class="panel-title">
+                                                        <a data-toggle="collapse" href="#collapses2" aria-expanded="true" aria-controls="collapses2" class="lead">数据域名称2</a>
+                                                    </div>
+                                                    <div id="collapses2" role="tabpanel" aria-labelledby="headingCollapses2" class="collapse in show" style="">
+                                                        <div class="card-content">
+                                                            <div class="">
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td rowspan="4" class="rotate">规则类型</td>
+                                                                        </tr>
+                                                                        <tr class="table-secondary">
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>数据</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>规则样例</th>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="p-3">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr class="border_bold">
+                                                <th style="border-top: 0px solid #ddd;">
+                                                    <div id="headingCollapses3" class="panel-title">
+                                                        <a data-toggle="collapse" href="#collapses3" aria-expanded="false" aria-controls="collapses3" class="lead collapsed">数据域名称3</a>
+                                                    </div>
+                                                    <div id="collapses3" role="tabpanel" aria-labelledby="headingCollapses3" class="collapse" style="">
+                                                        <div class="card-content">
+                                                            <div class="">
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>规则类型</th>
+                                                                        </tr>
+                                                                        <tr class="table-secondary">
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>数据</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>规则样例</th>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="p-3">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr class="border_bold">
+                                                <th style="border-top: 0px solid #ddd;">
+                                                    <div id="headingCollapses4" class="panel-title">
+                                                        <a data-toggle="collapse" href="#collapses4" aria-expanded="false" aria-controls="collapses4" class="lead collapsed">数据域名称4</a>
+                                                    </div>
+                                                    <div id="collapses4" role="tabpanel" aria-labelledby="headingCollapses4" class="collapse" style="">
+                                                        <div class="card-content">
+                                                            <div class="">
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>规则类型</th>
+                                                                        </tr>
+                                                                        <tr class="table-secondary">
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>数据</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>规则样例</th>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li class="p-3">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr class="border_bold">
+                                                <th style="border-top: 0px solid #ddd;">
+                                                    <div id="headingCollapses5" class="panel-title">
+                                                        <a data-toggle="collapse" href="#collapses5" aria-expanded="false" aria-controls="collapses5" class="lead collapsed">数据域名称3</a>
+                                                    </div>
+                                                    <div id="collapses5" role="tabpanel" aria-labelledby="headingCollapses5" class="collapse" style="">
+                                                        <div class="card-content">
+                                                            <div class="">
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <t>规则类型</t>
+                                                                        </tr>
+                                                                        <tr class="table-secondary">
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>数据</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th></th>
+                                                                            <th>规则样例</th>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                
+                            </ul>
+                            
+
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end row -->
+        </div>
+    </div>
+</div>
                             </div>
                         </div>
                     </div>
@@ -517,6 +1089,13 @@ function myFunction() {
 }
 </script>
 
+<script>
+    $(window).on("load resize ", function () {
+            var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+            $('.tbl-header').css({ 'padding-right': scrollWidth });
+        }).resize();
+</script>
+
 <!-- jQuery  -->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
@@ -536,6 +1115,40 @@ function myFunction() {
 <script src="assets/plugins/morris/morris.min.js"></script>
 <!-- App js -->
 <script src="assets/js/app.js"></script>
+
+
+<script src="assets/pages/dashborad.js"></script>
+
+<!-- App js -->
+<script src="assets/js/app.js"></script>
+<script>
+    /* BEGIN SVG WEATHER ICON */
+    if (typeof Skycons !== 'undefined') {
+        var icons = new Skycons(
+            { "color": "#fff" },
+            { "resizeClear": true }
+        ),
+            list = [
+                "clear-day", "clear-night", "partly-cloudy-day",
+                "partly-cloudy-night", "cloudy", "rain", "sleet", "snow", "wind",
+                "fog"
+            ],
+            i;
+
+        for (i = list.length; i--;)
+            icons.set(list[i], list[i]);
+        icons.play();
+    };
+
+    // scroll
+
+    $(document).ready(function () {
+
+        $("#boxscroll").niceScroll({ cursorborder: "", cursorcolor: "#cecece", boxzoom: true });
+        $("#boxscroll2").niceScroll({ cursorborder: "", cursorcolor: "#cecece", boxzoom: true });
+
+    });
+</script>
 
 </body>
 </html>

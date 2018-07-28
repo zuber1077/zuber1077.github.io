@@ -1,5 +1,6 @@
 .number{
   font-size: 27.76px;
+  margin-bottom: 54px;
 }
 
 .info-card {
@@ -28,13 +29,14 @@
 }
 
 .bar-graph-container {
-    width: 42%;
+    width: 100%;
     height: 217px;
     display: inline-block;
-    min-width: 340px;
-    margin-left: 3%;
+    /* min-width: 340px; */
+    margin-left: 2%;
     position: relative;
     top: 49px;
+    background-image: url('/assets/images/lines-x.png');
 }
 
 .x-axis-label {
@@ -56,12 +58,12 @@
 }
 
 .vertical .progress-bar {
-  float: left;
-  height: 100%;
-  width: 2%;
-  margin-right: 2.5%;
-  text-align: center;
-  border-radius: 3px;
+    float: left;
+    height: 100%;
+    width: 9px;
+    margin-right: 1.5%;
+    text-align: center;
+    border-radius: 3px;
 }
 
 .vertical .progress-track {
@@ -88,6 +90,6 @@
 
 
 .vertical .progress-fill:hover {
-  background: #56a8fc;
+  background: #70c2fd;
   color: transparent;
 }
