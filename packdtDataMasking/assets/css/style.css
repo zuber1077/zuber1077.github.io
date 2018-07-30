@@ -3030,3 +3030,11 @@ border-right: solid #d4d8dd 1px;
  #topnav .navigation-menu > li.activate{
      font-weight: bold;
  }
+ @media (min-width: 1600px) {
+    .nowss{
+          margin-left: -1290px;
+    }
+    .app-search{
+        margin-left: -1230px;
+    }
+ }
