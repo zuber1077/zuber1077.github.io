@@ -86,3 +86,24 @@ function ($) {
     "use strict";
     $.MainApp.init();
 }(window.jQuery);
+
+
+function myFunction() {
+    var x = document.getElementById("second_nav");
+    var y = document.getElementById("main_nav");
+    if (y.style.visibility === "visible") {
+        y.style.visibility = "hidden";
+        // y.style.transition = "0.5s";
+    } else {
+        y.style.visibility = "visible";
+        // y.style.transition = "0.3s";
+    }
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+        x.style.margin = "-58px 0px 0px 0px";
+        // x.style.transition = "0.5s";
+    } else {
+        x.style.visibility = "hidden";
+        // x.style.transition = "0.5s";
+    }
+}

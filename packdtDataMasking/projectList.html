@@ -23,25 +23,25 @@
 </head>
 
 <style>
-    .bottom-center{
+.bottom-center{
         margin-top: 7px;
         margin-left: 17px;
         color: #3f3f3f;
         font-weight: 500;
         font-size: 13px;
     }
-    .bottom-ce{
-        text-align: center;
-    }
-    .page-link{
-        color: #3f3f3f;
-        border: 0px solid #dee2e6;
-    }
-    .backward, .nexter{
-        background-color: #f5f5f5 !important;
-    }
-    .with_nav #main_nav {
-    display: block;
+.bottom-ce{
+    text-align: center;
+}
+.page-link{
+    color: #3f3f3f;
+    border: 0px solid #dee2e6;
+}
+.backward, .nexter{
+    background-color: #f5f5f5 !important;
+}
+.with_nav #main_nav {
+display: block;
 }
 #main_nav:target {
     display: block;
@@ -78,33 +78,7 @@
 }
 .form-control-sm{
     display: -webkit-inline-box;
-    }
-
-    #border:active{
-    border-top: solid #f8f8f8 3px;
-    border-left: solid #d4d8dd 1px;
-    border-right: solid #d4d8dd 1px;
-    }
-    #border:hover{
-    border-top: solid #f8f8f8 3px;
-    border-left: solid #d4d8dd 1px;
-    border-right: solid #d4d8dd 1px;
-    }
-    #border:checked{
-    border-top: solid #f8f8f8 3px;
-    border-left: solid #d4d8dd 1px;
-    border-right: solid #d4d8dd 1px;
-    }
-    #border:focus{
-    border-top: solid #f8f8f8 3px;
-    border-left: solid #d4d8dd 1px;
-    border-right: solid #d4d8dd 1px;
-    }
-    #border:focus-within{
-    border-top: solid #f8f8f8 3px;
-    border-left: solid #d4d8dd 1px;
-    border-right: solid #d4d8dd 1px;
-    }
+}
 </style>
 <body>
     <!-- Navigation Bar-->
@@ -132,16 +106,40 @@
     
                     <ul class="list-inline float-right mb-0">
                         <li class="list-inline-item dropdown notification-list hide-phone" id="access_nav">
-                            <a href="href="#main_nav"" class="access_aid nowss nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                            <a href="#" class="access_aid nowss nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
                                 aria-expanded="false">
-                                项目
+                                项目 <i class="fa fa-sort-desc"></i>
                             </a>
+                            <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                <!-- item-->
+                                <div class="dropdown-item noti-title">
+                                    <h5>新建项目</h5>
+                                </div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa fa-list m-r-5 text-muted"></i> 我创建的项目</a>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="m-r-5 text-muted"></i> 脱敏产品</a>
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="m-r-5 text-muted"></i>数据清洗</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa fa-list m-r-5 text-muted"></i> 我参与的项目
+                                    
+                                </a>
+                                    <div class="dropdown-divider"></div>
+                                
+                                    <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa fa-list m-r-5 text-muted"></i> 所有项目</a>
+                            </div>
                         </li>
                         <!-- search -->
 
                         <li class="hide-phone app-search">
                             <form role="search" class="">
-                                <input type="text" placeholder="搜索所有项目" class="form-control">
+                                <input style="border: 0px solid #ccc;" type="text" placeholder="搜索所有项目" class="form-control">
                                 <a href="">
                                     <i class="fa fa-search"></i>
                                 </a>
@@ -298,20 +296,6 @@
             </div>
             <!-- end container -->
         </div>
-
-
-        
-        <style>
-        #second_nav {
-            visibility: hidden;
-        }
-        /* #menuTrigger:checked + #main_nav{
-            visibility: hidden;
-        } */
-        #main_nav{
-            visibility: visible;
-        }
-        </style>
 
        
         <!-- end second -->
@@ -649,29 +633,6 @@
             // });
         });
     </script> -->
-
-<script>
-function myFunction() {
-    var x = document.getElementById("second_nav");
-    var y = document.getElementById("main_nav");
-    if(y.style.visibility === "visible"){
-        y.style.visibility = "hidden";
-        // y.style.transition = "0.5s";
-    }else{
-        y.style.visibility = "visible";
-        // y.style.transition = "0.3s";
-    }
-    if (x.style.visibility === "hidden") {
-        x.style.visibility = "visible";
-        x.style.margin = "-58px 0px 0px 0px";
-        // x.style.transition = "0.5s";
-        x.style.background = "#dfe3e6";
-    } else {
-        x.style.visibility = "hidden";
-        // x.style.transition = "0.5s";
-    }
-}
-</script>
 
 <!-- jQuery  -->
 <script src="assets/js/jquery.min.js"></script>
