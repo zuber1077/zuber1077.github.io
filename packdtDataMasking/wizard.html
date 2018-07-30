@@ -529,6 +529,26 @@ a:hover{
             .card{
                 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0) !important;
             }
+            #card-body{
+                padding: 2.5rem;
+                margin-bottom: 888px;
+            }
+            @media (min-width: 768px){
+                .col-sm-8 {
+                    margin-left: 169px;
+                    margin-top: 14px;
+                    }
+                }
+                .btn-info{
+                    background-color: #61a4ff;
+                }
+                .btn-warning{
+                    background-color: #f1ae4e;
+                }
+                .btn-light {
+                color: #434f65;
+                background-color: #ebeff2;
+                }
 
         /* // 28 31 */
     </style>
@@ -581,7 +601,7 @@ a:hover{
                                     </ul>
 <div class="col-sm-11 mx-auto">
     <div class="card m-b-30 centeri">
-        <div class="card-body">
+        <div class="card-body" id="card-body">
             <p class="titles">业务系统名称： 项目名称1</p>
         <div class="row">
             <div class="col-10 auto">
@@ -816,10 +836,27 @@ a:hover{
             </div>
             <!-- end col -->
         </div>
+        <style>
+            .pp{
+                font-size: 16px;
+                padding-top: 10px;
+                width: 742px;
+                color: #3d3e42;
+            }
+            .pp>span{
+                font-size: 14px;
+                color: #686868;
+            }
+            .btn:not(:disabled):not(.disabled) {
+                cursor: pointer;
+                margin-left: 16px;
+                padding: 4px 39px;
+            }
+        </style>
         <div class="row">
             <div class="col-10 auto">
                 <h4 class="mt-0 header-title">数据域名称</h4>
-                <div class="card m-b-30" style="height: 380px;" style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0) !important;">
+                <div class="card m-b-30" style="height: 300px;" style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0) !important;">
                     <div class="">
                         <label for="example-text-input" class="col-sm-2 col-form-label text-first">数据域：</label>
                     </div>
@@ -1206,8 +1243,19 @@ a:hover{
                             
 
                         </div>
+                        <p class="pp">备注：<span>代替文字代替文字代替文字代替文字代替文字代替文字代替文字代替文字代替文字代替文字代替文字代替文字 代代替文字代替文字代替文字代替文字代替文字</span></p>
+                         <div class="col-sm-8">
+                             <button class="btn btn-info waves-effect waves-light">
+                                 保存
+                             </button>
+                             <button class="btn btn-warning waves-effect waves-light">
+                                 保存
+                             </button>
+                             <button class="btn btn-light waves-effect">
+                                 取消
+                             </button>
+                         </div>
                         
-
                     </div>
                 </div>
             </div>
@@ -1260,9 +1308,6 @@ function myFunction() {
 <script src="assets/js/jquery.slimscroll.js"></script>
 <script src="assets/js/jquery.nicescroll.js"></script>
 <script src="assets/js/jquery.scrollTo.min.js"></script>
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
 
 <script src="assets/pages/wizard.js"></script>
 <script src="assets/plugins/skycons/skycons.min.js"></script>
