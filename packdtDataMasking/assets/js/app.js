@@ -101,6 +101,7 @@ function myFunction() {
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
         x.style.margin = "-58px 0px 0px 0px";
+        // x.style.backgroundcolor = "#fff";
         // x.style.transition = "0.5s";
     } else {
         x.style.visibility = "hidden";
