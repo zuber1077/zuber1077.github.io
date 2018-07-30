@@ -17,7 +17,7 @@ function displayTooltip(e) {
   $('.info-card').css('display', 'inline-flex');
   $('.info-card').css('position', 'absolute');
   $('.info-card').css('left', x - 108);
-  $('.info-card').css('top', y - 144);
+  $('.info-card').css('top', y - 142);
   $('.info-card').children('.card-text').text($(this).text());
 }
 
