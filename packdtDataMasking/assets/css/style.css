@@ -2703,6 +2703,9 @@ body {
   }
   #topnav .navigation-menu > li .submenu.megamenu.second_nav {
     width: 98px;
+    border-left: solid #d4d8dd 1px;
+    border-right: solid #d4d8dd 1px;
+}
   }
   #topnav .navigation-menu > li .submenu.megamenu > li {
     overflow: hidden;
@@ -2738,7 +2741,12 @@ body {
   #topnav .navigation-menu > li .submenu li a:hover {
     color: #61a4ff; 
     background-color: #eaeef1;
-    width: 102px
+    width: 99px;
+  }
+  #topnav .navigation-menu > li .submenu li a.second_nav:hover {
+    color: #61a4ff; 
+    background-color: #eaeef1;
+    width: 96px;
   }
   #topnav .navigation-menu > li .submenu li span {
     display: block;
