@@ -77,6 +77,7 @@
         this.initToggleSearch();
     },
 
+
     //init
     $.MainApp = new MainApp, $.MainApp.Constructor = MainApp
 }(window.jQuery),
