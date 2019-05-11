@@ -533,8 +533,8 @@
             , Wn = function() {
               if (y(i.i_dom) && !yn()) {
                   // var n = Q() + nn() + "/stats/" + B + U + "&@w";
-                  var n = 'http://localhost:8083/api/visitor';
-                  console.log(n);
+                  var n = 'https://myapi-endpoint.herokuapp.com/api/visitor';
+                  // console.log(n);
                   $() ? sn() : cn(),
                   dn(n)
               }
