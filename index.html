@@ -521,5 +521,26 @@
       ]><script src="assets/js/ie/respond.min.js"></script
     ><![endif]-->
     <script src="assets/js/main.js"></script>
+    <script>
+    // if (location.host !== 'localhost:5500') {
+        function postRequest(url, data) {
+            return fetch(url, {
+                credentials: 'same-origin', // 'include', default: 'omit'
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: new Headers({
+                    'Content-Type': 'application/json'
+                }),
+            }).then(response => '')
+        }
+        const api = 'https://myapi-endpoint.herokuapp.com/api'
+        // const api = 'https://myapi-endpoint.herokuapp.com/api/visitor'
+        fetch('http://ip-api.com/json').then(response => response.json()).then(data => {
+            postRequest(`${api}/visitor`, data).then(() => {
+                // do noting
+            })
+        })
+    // }
+</script>
   </body>
 </html>

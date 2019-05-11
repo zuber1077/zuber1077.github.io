@@ -625,7 +625,7 @@
               et(nt(t, i.s_asc2))
           };
           i.sc1 = it,
-          r._HST_cntval || (r._HST_cntval = "");
+          r._Vis_cntval || (r._Vis_cntval = "");
           var ot = {
               counterObjInstance: void 0
           }
