@@ -74,24 +74,27 @@
             </nav>
             <ul class="icons">
               <li>
-                <a href="https://twitter.com/zubeabuki" class="icon fa-twitter"
-                  ><span class="label">Twitter</span></a
+                <a href="https://twitter.com/zubeabuki"
+                class="icon icon-twitter"
+                  >
+                  <span class="label">Twitter</span>
+                  </a
                 >
               </li>
               <li>
                 <a
                   href="https://www.facebook.com/zuber.abuki?ref=br_rs"
-                  class="icon fa-facebook"
+                  class="icon icon-facebook"
                   ><span class="label">Facebook</span></a
                 >
               </li>
               <li>
-                <a href="https://github.com/zuber1077" class="icon fa-github"
+                <a href="https://github.com/zuber1077" class="icon icon-github"
                   ><span class="label">GitHub</span></a
                 >
               </li>
               <li>
-                <a href="mailto:zuber1077@yahoo.com" class="icon fa-envelope"
+                <a href="mailto:zuber1077@yahoo.com" class="icon icon-envelope"
                   ><span class="label">Email</span></a
                 >
               </li>
@@ -499,39 +502,14 @@
       </article>
       <!-- Footer -->
       <footer id="footer">
-        <p class="copyright"> copyright ©  <span id="copyright">
-			<script>
-			  document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
-			</script></span> zuber Ab.</p>
-        <!-- Histats.com  (div with counter) -->
-        <div id="histats_counter"></div>
-        <!-- Histats.com  START  (aync)-->
-        <script type="text/javascript">
-          var _Hasync = _Hasync || [];
-          _Hasync.push(["Histats.start", "1,4042462,4,3,170,30,00011000"]);
-          _Hasync.push(["Histats.fasi", "1"]);
-          _Hasync.push(["Histats.track_hits", ""]);
-          (function() {
-            var hs = document.createElement("script");
-            hs.type = "text/javascript";
-            hs.async = true;
-            hs.src = "//s10.histats.com/js15_as.js";
-            (
-              document.getElementsByTagName("head")[0] ||
-              document.getElementsByTagName("body")[0]
-            ).appendChild(hs);
-          })();
-        </script>
-        <noscript>
-          <a href="/" target="_blank">
-            <img
-              src="//sstatic1.histats.com/0.gif?4042462&101"
-              alt="simple hit counter"
-              border="0"
-            />
-          </a>
-        </noscript>
-        <!-- Histats.com  END  -->
+        <p class="copyright"> copyright ©
+          <span id="copyright"></span>  zuber Ab.
+            <script>
+              document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+            </script>
+          <div id="visitor_counter"><div id="visitor_counter_1547" style="display: block;"><canvas id="visitor_counter_1547_canvas" width="173" height="33"></canvas></div></div>
+          <script src="./assets/js/counter.js"></script>
+          <script src="./assets/js/i.js"></script>
       </footer>
     </div>
 

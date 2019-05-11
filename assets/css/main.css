@@ -88,6 +88,7 @@
 
 	body, input, select, textarea {
 		color: #444;
+		fill: #444;
 		font-family: "Raleway", Helvetica, sans-serif;
 		font-size: 14pt;
 		font-weight: 300;
@@ -119,10 +120,12 @@
 		text-decoration: none;
 		border-bottom: dotted 1px;
 		color: inherit;
+		fill: inherit;
 	}
 
 		a:hover {
 			color: #49c8ff !important;
+			fill: #49c8ff !important;
 			border-bottom-color: transparent;
 		}
 
@@ -417,7 +420,7 @@
 		.select-wrapper:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: 'icomoon';
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -487,7 +490,7 @@
 			input[type="radio"] + label:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
+				font-family: 'icomoon';
 				font-style: normal;
 				font-weight: normal;
 				text-transform: none !important;
@@ -590,7 +593,7 @@
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: 'icomoon';
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
