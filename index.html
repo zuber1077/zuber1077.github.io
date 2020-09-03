@@ -535,11 +535,12 @@
         }
         const api = 'https://myapi-endpoint.herokuapp.com/api'
         // const api = 'https://myapi-endpoint.herokuapp.com/api/visitor'
-        fetch('http://ip-api.com/json').then(response => response.json()).then(data => {
-            postRequest(`${api}/visitor`, data).then(() => {
+//         fetch('http://ip-api.com/json').then(response => response.json()).then(data => {
+           
+//         })
+	 postRequest(`${api}/visitor`, {}).then(() => {
                 // do noting
             })
-        })
     // }
 </script>
   </body>
